@@ -1,8 +1,7 @@
 import { Nav } from "@/components/Nav";
 import { HeroSection } from "@/components/HeroSection";
 import { BrandStatement } from "@/components/BrandStatement";
-import { Services } from "@/components/Services";
-import { Work } from "@/components/Work";
+import { RuralMarketing } from "@/components/RuralMarketing";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -14,8 +13,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <BrandStatement />
-        <Services />
-        <Work />
+        <RuralMarketing />
         <About />
         <Contact />
       </main>
