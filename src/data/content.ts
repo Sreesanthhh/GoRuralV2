@@ -18,8 +18,14 @@ export type WorkCategory = {
   icon: string;
   /** One-liner for the homepage card. */
   short: string;
-  /** Full explanation shown on the category's own page. */
-  description: string;
+  /** Punchy tagline shown under the title on the category page. */
+  tagline?: string;
+  /** Intro paragraph shown on the category's own page. */
+  description?: string;
+  /** Checklist / bullet points (from the corporate profile). */
+  points?: string[];
+  /** Big red highlight stat line. */
+  highlight?: string;
 };
 
 export const workCategories: WorkCategory[] = [
@@ -28,16 +34,29 @@ export const workCategories: WorkCategory[] = [
     title: "Mobile Van Campaign",
     icon: "Truck",
     short: "Branded LED & box vans that take your message door to door.",
+    tagline: "Reach Out!",
     description:
-      "Our fleet of branded promotion vans — LED-screen vehicles, box vans, and Tata Ace units — carries your brand into towns and villages that mass media never reaches. With GPS-tracked routes, trained crews, and live daily reporting, every kilometre is accountable: product demos, audio announcements, sampling, and lead capture happen right at the customer's doorstep.",
+      "Distance is never a barrier for us at GoRural India. From towns to the semi-urban localities, villages to the interior most landscapes; the uniquely tailored Mobile Van Promotions take your brand to the farthest corner on the map and deeper into the hearts of the rural populace.",
+    points: [
+      "140 High-End Digital LED Vans",
+      "28 14ft & 17ft Canter Vans",
+      "60 Tata Ace Vans",
+      "100 Tri Cycles",
+      "50 Scooters",
+    ],
+    highlight: "2,00,000 kms per month average campaign",
   },
   {
     slug: "haat-mela-mandi-activations",
     title: "Haat, Mela & Mandi Activations",
     icon: "Storefront",
     short: "Rythu Bazaars, weekly haats, and mandi-day brand activations.",
-    description:
-      "Weekly haats, melas, mandis, and Rythu Bazaars are where rural India actually shops. We set up branded stalls, demo zones, and engagement activities on the busiest market days — putting your product in the hands of farmers and rural families at the exact moment they're in a buying mindset.",
+    tagline: "Turning Rural Markets into Brand Powerhouses!",
+    points: [
+      "Rural India's mandis, haats, melas and special village trade days drive billions of rupees in annual commerce.",
+      "These vibrant local markets represent high-impact touchpoints for brands to connect directly with consumers.",
+      "Recognizing these vibrant marketplaces as untapped economic hubs, GoRural India has designed a series of targeted initiatives to engage and empower these grassroots trading centers.",
+    ],
   },
   {
     slug: "ooh-branding",
@@ -45,7 +64,18 @@ export const workCategories: WorkCategory[] = [
     icon: "Buildings",
     short: "Building wraps, hoardings, wall paintings, arches, and more.",
     description:
-      "From high-rise building wraps to village wall paintings, pole medians, LED arches, and auto branding — our out-of-home work makes brands physically impossible to miss. We handle everything in-house: site scouting, permissions, printing, installation, and photographic proof of every executed unit.",
+      "From high-rise building wraps to village wall paintings, our out-of-home work makes brands physically impossible to miss — executed end to end, with photographic proof of every unit.",
+    points: [
+      "Hoardings",
+      "Building Wraps",
+      "Bus Shelters",
+      "Digital Walls",
+      "Police Umbrellas",
+      "Wall Paintings",
+      "Retail Store Branding",
+      "Arch Branding",
+      "Innovations — Hut & Boat Branding",
+    ],
   },
   {
     slug: "rural-influencer-campaign",
@@ -60,8 +90,13 @@ export const workCategories: WorkCategory[] = [
     title: "Festival Activation",
     icon: "Confetti",
     short: "Brand presence at jataras, festivals, and mega congregations.",
-    description:
-      "Festivals are rural India's biggest media moments. From Medaram Jatara — the world's largest tribal congregation — to seasonal festivals like Mango Fest and Ganesh Utsav, we build branded arches, LED billboards, stalls, and experience zones where millions gather with time to engage.",
+    tagline: "Where Culture Meets Branding Excellence",
+    points: [
+      "Rural festivals bring communities together, attracting thousands of devotees and visitors to a single location.",
+      "These gatherings create excellent opportunities for branding, trade exhibitions, and promotional activities.",
+      "Initiatives like water kiosks, first-aid centres, and help desks offer valuable CSR engagement while enhancing brand visibility.",
+      "Prominent celebrations include Medaram Jatara, Ganesh Utsavam, and Bathukamma festivals.",
+    ],
   },
   {
     slug: "fabrication-digital-signage",
@@ -76,16 +111,25 @@ export const workCategories: WorkCategory[] = [
     title: "Theater Branding",
     icon: "FilmSlate",
     short: "Cinema advertising and theatre branding across the regions.",
-    description:
-      "Single screens and regional multiplexes remain one of the most attentive audiences in tier-2 and tier-3 India. We place brands on screen and around the venue — on-screen ads, standees, foyer branding, and seat-back placements — timed to blockbuster regional releases.",
+    tagline: "Transforming Screen Time into Brand Time",
+    points: [
+      "Movies possess an unmatched ability to attract and engage mass audiences throughout the year.",
+      "Through our strong partnerships with leading theatre networks across South India, GoRural India offers brands high-impact, cost-effective promotions — both on-screen and off-screen.",
+      "A perfect blend of entertainment and brand visibility that delivers measurable results.",
+    ],
   },
   {
     slug: "campus-activation",
     title: "Campus Activation",
     icon: "GraduationCap",
     short: "College fests, school programs, and youth-audience engagement.",
-    description:
-      "Campuses concentrate exactly the audience many brands struggle to reach — young, connected, and influential at home. We run college fest sponsorships, sampling drives, competitions, and ambassador programs across schools and colleges in Telangana and Andhra Pradesh.",
+    tagline: "Where Brands Meet Tomorrow's Consumers",
+    points: [
+      "For brands aiming to engage young audiences, GoRural India is the perfect partner.",
+      "With strong associations across 430 colleges in rural and semi-urban regions, we offer a ready-to-activate platform for youth-focused campaigns, events and brand experiences.",
+      "Reach the next generation of consumers — where aspiration meets opportunity.",
+    ],
+    highlight: "430 colleges across rural & semi-urban India",
   },
   {
     slug: "events-dealer-meets",
@@ -116,8 +160,12 @@ export const workCategories: WorkCategory[] = [
     title: "CSR Campaigns",
     icon: "HandHeart",
     short: "Purpose-led campaigns executed with community depth.",
-    description:
-      "We help brands execute CSR initiatives with the same on-ground rigor as our commercial campaigns — public awareness drives, health and education programs, and environmental initiatives, delivered through our deep network of rural and civic partnerships.",
+    tagline: "A humane perspective!",
+    points: [
+      "GoRural India partners with brands to design and execute impactful CSR initiatives that strengthen both social value and brand equity.",
+      "Our action-driven programs span environment, consumer welfare, employee engagement, and community development, helping organizations build a positive and responsible image.",
+      "Notable initiatives include the Village Catalyst Model and the 'Save a Life' Tour, both recognized for creating meaningful social impact.",
+    ],
   },
   {
     slug: "others",
