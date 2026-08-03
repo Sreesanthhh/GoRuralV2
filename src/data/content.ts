@@ -188,6 +188,538 @@ export type CaseStudy = {
 };
 
 export const caseStudies: CaseStudy[] = [
+  // ─────────────────────────────────────────────────────────────
+  // 1. MOBILE VAN CAMPAIGN
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "TVS Motor — Multi-State LED Van Programme",
+    tag: "Mobile Van",
+    years: "2024–2026",
+    description:
+      "A continuous multi-year LED and demo van programme for TVS Motor spanning Andhra Pradesh, Telangana, Karnataka, Tamil Nadu, Gujarat, Madhya Pradesh, Maharashtra, Uttar Pradesh, Bihar, Jharkhand, Odisha, Chhattisgarh and West Bengal — covering the Raider, Radeon, Apache, Star City, Sport, Jupiter and NTorq lines with LED screens, L-shape displays and demo units.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Sangeetha Mobiles",
+    tag: "Mobile Van",
+    years: "2025–2026",
+    description:
+      "Multi-van retail campaigns across Telangana, Hyderabad and Andhra Pradesh — scaling from 5 vans over 20 days to a 10-van, 30-day deployment.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Syngenta",
+    tag: "Agri Business",
+    years: "2024–2026",
+    description:
+      "Sustained van campaigns for Syngenta's crop-protection portfolio — Incipio, Sarvam, Udaan, Simodis Cotton and Vestoria Pro — using branded Tata Ace and LED vehicles across Andhra Pradesh and Telangana.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Muthoot Finance",
+    tag: "Finance",
+    years: "2024–2026",
+    description:
+      "Rolling LED van campaigns for Muthoot's gold-loan and financial services across Gujarat, Karnataka and Tamil Nadu, scaling to a 4-van deployment.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Vodafone",
+    tag: "Telecom",
+    years: "2024–2026",
+    description:
+      "Mobile promotion vans, L-shape display vehicles and pond-vehicle activations for Vodafone across Andhra Pradesh, Telangana, Karnataka and Hyderabad.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "FMC",
+    tag: "Agri Business",
+    years: "2024–2026",
+    description:
+      "Multi-van crop-science campaigns across Karimnagar, Jangaon and Peddapalli, including the NewGen product line — scaling to a 4-van deployment.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Kaveri Seeds",
+    tag: "Agri Business",
+    years: "2026",
+    description:
+      "LED and standard mobile van activations promoting Kaveri's hybrid crop varieties across Telangana and Andhra Pradesh, tracked with daily route reporting.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Nuziveedu Seeds",
+    tag: "Agri Business",
+    years: "2026",
+    description:
+      "LED van campaigns carrying Nuziveedu's seed portfolio directly to rural retail points and farming belts.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Crystal Crop",
+    tag: "Agri Business",
+    years: "2026",
+    description:
+      "Van campaigns for Crystal Crop's agri-input range, including a 60-day continuous LED van deployment.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Shriram Bio Seeds",
+    tag: "Agri Business",
+    years: "2025–2026",
+    description:
+      "Three-van campaigns taking Shriram's bio-seed range into farming communities across the Telugu states.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Ankur Seeds",
+    tag: "Agri Business",
+    years: "2025–2026",
+    description:
+      "Tata Ace and LED van activations introducing Ankur's seed varieties to rural retail networks.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Coromandel",
+    tag: "Agri Business",
+    years: "2025–2026",
+    description:
+      "Van campaigns for Coromandel's agri-input portfolio, running as a continuation programme across multiple cycles.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Dhanuka Agritech",
+    tag: "Agri Business",
+    years: "2025",
+    description:
+      "Tata Ace van activations around Madanapalle, taking Dhanuka's crop-protection products to farming clusters.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Max Seeds",
+    tag: "Agri Business",
+    years: "2026",
+    description:
+      "LED van campaign introducing Max Seeds' hybrid range across rural markets.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Genomix",
+    tag: "Agri Business",
+    years: "2026",
+    description:
+      "Box van campaign carrying the Genomix agri portfolio into rural retail territories.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Kubota",
+    tag: "Agri Machinery",
+    years: "2024",
+    description:
+      "Multi-state van campaign across Andhra Pradesh, Karnataka and Telangana promoting Kubota's farm machinery to agricultural buyers.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Tata BlueScope Steel",
+    tag: "Building Materials",
+    years: "2026",
+    description:
+      "Van activity extending Tata BlueScope's reach along construction supply routes and dealer territories.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Tata Rallis",
+    tag: "Agri Business",
+    years: "2026",
+    description:
+      "Van activity carrying Tata Rallis' agri-input range into farming communities.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Astral Pipes",
+    tag: "Building Materials",
+    years: "2025",
+    description:
+      "Multi-month Tata Ace van campaign across Telangana, targeting plumbing and construction trade networks.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Sagar Cement",
+    tag: "Building Materials",
+    years: "2025",
+    description:
+      "Rural van campaign blending product demonstration, folk-art engagement and dealer outreach across village and mandi touchpoints.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Skipper Metzer",
+    tag: "Industrial",
+    years: "2026",
+    description:
+      "Van-based brand activation across Maharashtra for Skipper Metzer's irrigation product line.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "LIC",
+    tag: "Insurance",
+    years: "2025",
+    description:
+      "Mobile promotion vans carrying LIC's life-insurance messaging into residential and rural markets.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Sensodyne (Impact)",
+    tag: "FMCG",
+    years: "2025–2026",
+    description:
+      "Continuation van campaign for Sensodyne, plus two-sided LED branding vehicles across Maharashtra.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Royal Stag",
+    tag: "Beverages",
+    years: "2025",
+    description:
+      "Van campaign delivering Royal Stag's brand presence across target rural and semi-urban markets.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Mobil Oil",
+    tag: "Automotive",
+    years: "2024",
+    description:
+      "L-shape canter van activation for Mobil's lubricant range, targeting mechanics and vehicle-owner clusters.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Skylar",
+    tag: "Consumer",
+    years: "2025",
+    description:
+      "Six-van, 14-foot canter campaign delivering large-format brand presence across target markets.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Hello Life",
+    tag: "Healthcare",
+    years: "2024",
+    description:
+      "Three-van LED campaign spanning Andhra Pradesh, Telangana and Odisha.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Cream Stone",
+    tag: "F&B",
+    years: "2025",
+    description:
+      "L-shape van activation building Cream Stone's presence across urban and semi-urban catchments.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+  {
+    title: "Axiom",
+    tag: "Consumer",
+    years: "2024",
+    description:
+      "T-shape van activity delivering high-visibility mobile branding across target routes.",
+    placeholder: true,
+    category: "mobile-van-campaign",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 2. HAAT / MELA / MANDI ACTIVATIONS
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "TVS Motor — Pan-India Mandi Programme",
+    tag: "Mandi Activation",
+    years: "2025–2026",
+    description:
+      "Our largest running programme: LED demo vans working the weekly mandi circuit across twelve states — Uttar Pradesh, Rajasthan, Haryana, Bihar, Odisha, Jharkhand, West Bengal, Chhattisgarh, Maharashtra, Madhya Pradesh, Tamil Nadu and AP/Telangana — with route plans built around each market's trading day and repeatedly extended on client request.",
+    placeholder: true,
+    category: "haat-mela-mandi-activations",
+  },
+  {
+    title: "TVS Sport — Mandi Mileage Challenge",
+    tag: "Mandi Activation",
+    years: "2026",
+    description:
+      "An interactive mileage-challenge format run from mandi vans across Jharkhand and Chhattisgarh, pairing product demonstration with hands-on test rides at market gatherings.",
+    placeholder: true,
+    category: "haat-mela-mandi-activations",
+  },
+  {
+    title: "TVS — Mega Loan Mela",
+    tag: "Mandi Activation",
+    years: "2024",
+    description:
+      "Finance-led mela activations across Hyderabad and Secunderabad, converting footfall into qualified two-wheeler loan enquiries.",
+    placeholder: true,
+    category: "haat-mela-mandi-activations",
+  },
+  {
+    title: "Chambal Fertilisers — PMKSK Retailer Arches",
+    tag: "Agri Retail",
+    years: "2025",
+    description:
+      "Retailer arch branding across PMKSK outlets in Andhra Pradesh and Telangana, marking Chambal's presence at the point of farmer purchase.",
+    placeholder: true,
+    category: "haat-mela-mandi-activations",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 3. OOH BRANDING
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "Adani Cement",
+    tag: "Building Branding",
+    years: "2026",
+    description:
+      "Large-format building-wrap branding on an active high-rise construction site, putting Adani Cement directly in the sightline of thousands of daily commuters.",
+    image: "/images/work/adani.jpg",
+    category: "ooh-branding",
+  },
+  {
+    title: "Freedom Refined Oil — Charminar Building Wraps",
+    tag: "Building Branding",
+    years: "2025–2026",
+    description:
+      "A rolling six-month building-wrap programme at Charminar — one of Hyderabad's highest-footfall landmarks — with periodic flex changes to keep creative fresh.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "TVS Motor — Building Wraps & Hoardings",
+    tag: "OOH",
+    years: "2024–2026",
+    description:
+      "Sustained out-of-home presence across Telangana and Andhra Pradesh: Charminar building wraps, 60+ hoardings, 50 new building sites, wall wraps, Dasara hoardings and Punjab digital walls.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "TVS Motor — Arch & Pandal Branding",
+    tag: "OOH",
+    years: "2024–2025",
+    description:
+      "2D and 3D arch installations across the AP region plus 100 festival pandal arches in Hyderabad, turning public gathering points into brand landmarks.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "TVS Motor — Bus Shelter Campaign",
+    tag: "OOH",
+    years: "2024",
+    description:
+      "Bus shelter branding across Hyderabad, capturing commuter attention at high-dwell-time transit points.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Zomato — LED Arch Installations",
+    tag: "OOH",
+    years: "2026",
+    description:
+      "LED arch installations marking Zomato's presence at high-traffic public locations.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Kalamandir / KLM — LED Arch Programme",
+    tag: "OOH",
+    years: "2024–2025",
+    description:
+      "LED arch fabrication and installation across KLM Shopping Mall and Dasara festival sites, delivered end to end from design to on-site build.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "GRT Jewellers — Retail Branding",
+    tag: "Jewellery & Retail",
+    years: "2025",
+    description:
+      "Store-front and in-shop branding across five Hyderabad stores plus Narasaraopet and Tadepalligudem outlets — Kukatpally, Chandanagar, Somajiguda, AS Rao Nagar and Nizamabad.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Tata BlueScope Steel — Auto Branding",
+    tag: "Transit Branding",
+    years: "2026",
+    description:
+      "Vehicle branding across 500+ auto-rickshaws, turning everyday transit into a moving media network along construction supply routes.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "TVS NTorq — Auto Branding",
+    tag: "Transit Branding",
+    years: "2025",
+    description:
+      "500-unit auto-rickshaw branding campaign putting the NTorq in front of exactly the urban commuter audience it targets.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Gemini TV — Building Wraps",
+    tag: "Media",
+    years: "2024",
+    description:
+      "Multi-month building-wrap campaign for Gemini TV across prime Hyderabad sites.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Vodafone — Wall Painting",
+    tag: "Rural OOH",
+    years: "2026",
+    description:
+      "Village and roadside wall-painting campaign — the most durable, lowest-cost-per-impression medium in rural markets.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Nuziveedu Seeds — Digital Walls",
+    tag: "Rural OOH",
+    years: "2025",
+    description:
+      "4x2 digital wall installations across rural retail points and village approach roads.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Crystal Crop — Digital Walls",
+    tag: "Rural OOH",
+    years: "2026",
+    description:
+      "Digital wall branding placing Crystal Crop's range at farmer-facing retail touchpoints.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Coromandel — Retail Board Network",
+    tag: "Rural OOH",
+    years: "2025",
+    description:
+      "Site recce, fabrication and installation of non-lit and backlit retail boards across the dealer network.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Swiggy — Restaurant & Rider Branding",
+    tag: "Food Tech",
+    years: "2024",
+    description:
+      "Restaurant branding across partner outlets including Bawarchi, plus a rider T-shirt branding campaign turning the delivery fleet into moving media.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "CMR — Dasara LED Arch",
+    tag: "Retail",
+    years: "2024",
+    description:
+      "30-day LED arch fabrication and installation at CMR Patny for the Dasara retail season.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Casagrand — Khairatabad Ganesh LED Arch",
+    tag: "Real Estate",
+    years: "2026",
+    description:
+      "Single-side LED arch at Khairatabad Ganesh — one of Hyderabad's highest-footfall festival sites.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "aha — Khairatabad LED Arch Innovation",
+    tag: "Media & OTT",
+    years: "2024",
+    description:
+      "Custom LED arch innovation for the streaming platform aha at the Khairatabad festival site.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+  {
+    title: "Fortune — Hoardings",
+    tag: "FMCG",
+    years: "2024",
+    description:
+      "Hoarding campaign building Fortune's visibility across key Hyderabad corridors.",
+    placeholder: true,
+    category: "ooh-branding",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 4. RURAL INFLUENCER CAMPAIGN
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "TVS Raider — Influencer Campaign",
+    tag: "Influencer Marketing",
+    years: "2026",
+    description:
+      "An influencer-led activation for the TVS Raider, pairing on-ground vehicle display with regional creator content for amplified reach.",
+    placeholder: true,
+    category: "rural-influencer-campaign",
+  },
+  {
+    title: "TVS — Dasara Influencer Shoot",
+    tag: "Influencer Marketing",
+    years: "2025",
+    description:
+      "A festival-season content shoot with regional influencers, building creative around Dasara for social distribution.",
+    placeholder: true,
+    category: "rural-influencer-campaign",
+  },
+  {
+    title: "TVS — Mandi Influencer Integration",
+    tag: "Influencer Marketing",
+    years: "2026",
+    description:
+      "Regional influencers embedded into the mandi van circuit across Madhya Pradesh and Maharashtra — combining on-ground demonstration with creator-led social reach.",
+    placeholder: true,
+    category: "rural-influencer-campaign",
+  },
+  {
+    title: "TVS — Kurnool Showroom Launch",
+    tag: "Influencer Marketing",
+    years: "2026",
+    description:
+      "Influencer-driven launch campaign for a new TVS showroom in Kurnool, driving local footfall through trusted regional voices.",
+    placeholder: true,
+    category: "rural-influencer-campaign",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 5. FESTIVAL ACTIVATION
+  // ─────────────────────────────────────────────────────────────
   {
     title: "Medaram Jatara",
     tag: "Festival Activation",
@@ -198,14 +730,271 @@ export const caseStudies: CaseStudy[] = [
     category: "festival-activation",
   },
   {
-    title: "Adani Cement",
-    tag: "Building Branding",
+    title: "Medaram Jatara — Multi-Brand Programme",
+    tag: "Festival Activation",
     years: "2026",
     description:
-      "Large-format building-wrap branding on an active high-rise construction site, putting Adani Cement directly in the sightline of thousands of daily commuters.",
-    image: "/images/work/adani.jpg",
-    category: "ooh-branding",
+      "The full sponsor roster we executed at Medaram: UltraTech Cement LED arches, Wipro, Swastik Masala, Tata BlueScope Steel, Freedom, Zee Telugu, MTR and Lalith Jewellery — each with bespoke stalls, arches and branded zones across the festival footprint.",
+    placeholder: true,
+    category: "festival-activation",
   },
+  {
+    title: "Mango Fest — Multi-Brand RWA Programme",
+    tag: "Festival Activation",
+    years: "2025–2026",
+    description:
+      "A seasonal community festival franchise run across residential communities, with sponsor activations for LG, GRT Jewellers, Freedom, Swastik Mirchi, Skoda, Muthoot Group, TVS Motors, ACT Fibre, Porter, SV Saree House, Unacademy, Urban Rise, Casagrand, Bosch and Zee Telugu.",
+    placeholder: true,
+    category: "festival-activation",
+  },
+  {
+    title: "Ganesh Utsav — Eco Idol Programme",
+    tag: "Festival Activation",
+    years: "2024–2026",
+    description:
+      "A large-scale eco-friendly Ganesh idol supply and distribution programme — over 10,000 idols for UltraTech/Aditya Birla, Titan, MTR, Hindware, JSW Energy, Ramky, Kalamandir, Landvision, Axis Energy, Green Mark, Tridasa, CMR and Heritage, combining brand visibility with an environmental message.",
+    placeholder: true,
+    category: "festival-activation",
+  },
+  {
+    title: "Khairatabad Ganesh — Brand Branding",
+    tag: "Festival Activation",
+    years: "2024–2026",
+    description:
+      "Branding elements at Khairatabad Ganesh, one of India's most-visited festival sites — executed for Shriram Finance, MTR, Polycab, Big Basket and Heritage.",
+    placeholder: true,
+    category: "festival-activation",
+  },
+  {
+    title: "Dasara — Vijayawada Event Programme",
+    tag: "Festival Activation",
+    years: "2025",
+    description:
+      "Festival event execution at Vijayawada during Dasara for Adani, MTR and KEI — stage, branding and on-ground engagement across the celebration.",
+    placeholder: true,
+    category: "festival-activation",
+  },
+  {
+    title: "Fortune — Bonalu Event",
+    tag: "Festival Activation",
+    years: "2026",
+    description:
+      "Brand activation at Bonalu in Hyderabad, embedding Fortune into one of Telangana's most participatory local festivals.",
+    placeholder: true,
+    category: "festival-activation",
+  },
+  {
+    title: "JK Cement — Simhachalam Activation",
+    tag: "Festival Activation",
+    years: "2026",
+    description:
+      "Pilgrimage-site activation at Simhachalam, reaching devotee footfall with JK Cement's brand messaging.",
+    placeholder: true,
+    category: "festival-activation",
+  },
+  {
+    title: "CMR — Sankranti Decor",
+    tag: "Festival Activation",
+    years: "2024",
+    description:
+      "Sankranti festive decor and in-store theming at CMR Patny for the peak retail season.",
+    placeholder: true,
+    category: "festival-activation",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 6. FABRICATION & DIGITAL SIGNAGE
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "Mahyco — ICRISAT Stall",
+    tag: "Fabrication",
+    years: "2026",
+    description:
+      "Custom exhibition stall design and fabrication for Mahyco at ICRISAT, built in-house end to end.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "Shriram Seeds — ICRISAT Stall",
+    tag: "Fabrication",
+    years: "2026",
+    description:
+      "Exhibition stall fabrication for Shriram Seeds at ICRISAT, delivered on the same build cycle.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "Shriram Bio Seeds — Marigold Hotel Stall",
+    tag: "Fabrication",
+    years: "2025",
+    description:
+      "Conference stall fabrication and installation at Marigold Hotel for Shriram Bio Seeds.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "Syngenta — LED Display Supply",
+    tag: "Digital Signage",
+    years: "2025–2026",
+    description:
+      "Large-format LED display supply and operation — 12x8 and 14x8 rigs running 18–20 day cycles, including a 16-day Udaan deployment across Tamil Nadu.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "Nuziveedu Seeds — Spin Wheel Units",
+    tag: "Fabrication",
+    years: "2026",
+    description:
+      "Design and fabrication of five interactive spin-wheel engagement units for retail and event activation.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "GRT — T-Hub Stall Branding",
+    tag: "Fabrication",
+    years: "2025",
+    description:
+      "Stall design and branding for GRT at T-Hub, Hyderabad's flagship innovation campus.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "Tricom — Leonia Resort Selfie Booth",
+    tag: "Fabrication",
+    years: "2026",
+    description:
+      "Custom selfie-booth build at Leonia Resort, designed for high-volume guest engagement and social sharing.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "Skylar — Event Backdrop & Carpet",
+    tag: "Fabrication",
+    years: "2025",
+    description:
+      "Backdrop and red-carpet production for Skylar's brand event.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+  {
+    title: "Freedom — Vehicle Fabrication",
+    tag: "Fabrication",
+    years: "2024–2026",
+    description:
+      "Custom vehicle fabrication and branding builds for Freedom's promotional fleet.",
+    placeholder: true,
+    category: "fabrication-digital-signage",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 7. THEATER BRANDING — awaiting case studies
+  // ─────────────────────────────────────────────────────────────
+
+  // ─────────────────────────────────────────────────────────────
+  // 8. CAMPUS ACTIVATION
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "JNTU — Campus Sponsorship",
+    tag: "Campus Activation",
+    years: "2024",
+    description:
+      "Campus sponsorship and on-ground presence at JNTU, engaging a concentrated student audience.",
+    placeholder: true,
+    category: "campus-activation",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 9. EVENTS & DEALER MEETS
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "TVS Motor — PD Awards, Taj Vivanta",
+    tag: "Corporate Events",
+    years: "2026",
+    description:
+      "End-to-end execution of TVS's PD Awards night at Taj Vivanta — staging, AV, branding and hospitality for the dealer partner network.",
+    placeholder: true,
+    category: "events-dealer-meets",
+  },
+  {
+    title: "TVS Motor — Pragathi Resorts Event",
+    tag: "Corporate Events",
+    years: "2026",
+    description:
+      "Full event production at Pragathi Resorts for TVS's partner and channel programme.",
+    placeholder: true,
+    category: "events-dealer-meets",
+  },
+  {
+    title: "TVS Motor — 3-Wheeler Chirala Launch",
+    tag: "Corporate Events",
+    years: "2026",
+    description:
+      "Product launch event at Chirala for the TVS three-wheeler range, targeting commercial-vehicle buyers.",
+    placeholder: true,
+    category: "events-dealer-meets",
+  },
+  {
+    title: "Astral Pipes — Dealer Meets",
+    tag: "Dealer Meets",
+    years: "2025",
+    description:
+      "Back-to-back dealer conferences at Vijayawada and Visakhapatnam, covering venue, staging, branding and delegate management.",
+    placeholder: true,
+    category: "events-dealer-meets",
+  },
+  {
+    title: "Priya Gold — Dealers Meet",
+    tag: "Dealer Meets",
+    years: "2024",
+    description:
+      "Dealer meet execution at Aditya Park, Hyderabad for Priya Gold's channel network.",
+    placeholder: true,
+    category: "events-dealer-meets",
+  },
+  {
+    title: "Vodafone — Awards & Recognition Programme",
+    tag: "Corporate Events",
+    years: "2026",
+    description:
+      "Design and supply of certificates, medals and mementoes for Vodafone's partner recognition programme.",
+    placeholder: true,
+    category: "events-dealer-meets",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 10. RURAL SPORTS & RUNS
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "Godavari 5K Run",
+    tag: "Community Sports",
+    years: "2014",
+    description:
+      "A mass-participation community run along the Godavari, rallying thousands of runners and giving sponsors visibility across the entire event footprint.",
+    placeholder: true,
+    category: "rural-sports",
+  },
+  {
+    title: "Nellore 5K Run",
+    tag: "Community Sports",
+    description:
+      "A city-wide 5K run in Nellore bringing together schools, colleges and local institutions — community engagement at street level.",
+    placeholder: true,
+    category: "rural-sports",
+  },
+  {
+    title: "Vodafone — Cricket Activation",
+    tag: "Sports Marketing",
+    years: "2026",
+    description:
+      "Cricket-themed retail activations with green mat and stumps set-ups at Madhapur and Secunderabad stores, turning store forecourts into play zones.",
+    placeholder: true,
+    category: "rural-sports",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 11. EXPERIENTIAL MARKETING (RWA & community)
+  // ─────────────────────────────────────────────────────────────
   {
     title: "LG Electronics",
     tag: "RWA Activation",
@@ -243,148 +1032,228 @@ export const caseStudies: CaseStudy[] = [
     category: "experiential-marketing",
   },
   {
-    title: "TVS Motor — Pan-India Mandi Activity",
-    tag: "Mandi Activation",
-    years: "2026",
+    title: "TVS Motor — RWA & Test Ride Programme",
+    tag: "RWA Activation",
+    years: "2024–2026",
     description:
-      "Multi-state mandi (rural market) van campaigns across Maharashtra, Odisha, Chhattisgarh, Jharkhand, West Bengal, and Tamil Nadu — taking TVS two-wheelers directly to rural retail hubs.",
+      "A continuous residential-community programme: Jupiter and Raider RWA activations, gazebo set-ups across Karnataka, and test-ride drives in Hyderabad, Vijayawada, Visakhapatnam, Nizamabad, Khammam, Karimnagar, Tumkur, Warangal, Tamil Nadu, Maharashtra and Odisha.",
     placeholder: true,
-    category: "haat-mela-mandi-activations",
-  },
-  {
-    title: "TVS Raider — Influencer Campaign",
-    tag: "Influencer Marketing",
-    years: "2026",
-    description:
-      "An influencer-led activation for the TVS Raider, pairing on-ground vehicle display with creator content for wider reach.",
-    placeholder: true,
-    category: "rural-influencer-campaign",
-  },
-  {
-    title: "TVS — Corporate Awards Event",
-    tag: "Corporate Events",
-    years: "2026",
-    description:
-      "End-to-end execution of TVS's PD Awards event at Taj Vivanta, recognizing top-performing dealer partners.",
-    placeholder: true,
-    category: "events-dealer-meets",
-  },
-  {
-    title: "Vodafone",
-    tag: "Telecom",
-    years: "2026",
-    description:
-      "Mobile promotion vans, wall paintings, and cricket-themed retail branding for Vodafone across Hyderabad.",
-    placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "Syngenta",
-    tag: "Agri Business",
-    years: "2026",
-    description:
-      "Tata Ace van activations carrying Syngenta's crop-protection products directly into farming communities.",
-    placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "Tata BlueScope Steel — Auto Branding",
-    tag: "Building Materials",
-    years: "2026",
-    description:
-      "Large-scale vehicle branding across 500+ units for Tata BlueScope Steel, extending reach along construction supply routes.",
-    placeholder: true,
-    category: "ooh-branding",
-  },
-  {
-    title: "Muthoot Finance",
-    tag: "Finance",
-    years: "2026",
-    description:
-      "On-ground mobile promotion for Muthoot Finance's gold loan and financial services, reaching neighborhoods mass media misses.",
-    placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "Kaveri Seeds",
-    tag: "Agri Business",
-    years: "2026",
-    description:
-      "LED and standard mobile van activations promoting Kaveri Seeds' hybrid crop varieties across Telangana & Andhra Pradesh.",
-    placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "Nuziveedu Seeds",
-    tag: "Agri Business",
-    years: "2026",
-    description:
-      "LED van campaigns and digital wall installations spreading Nuziveedu Seeds' brand across rural retail points.",
-    placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "Crystal Crop",
-    tag: "Agri Business",
-    years: "2026",
-    description:
-      "Mobile van activity and digital wall branding introducing Crystal Crop's agri-input range to farming communities.",
-    placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "FMC",
-    tag: "Agri Business",
-    years: "2026",
-    description:
-      "Multi-van mobile promotion for FMC's crop science portfolio across key agricultural belts.",
-    placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "GRT",
-    tag: "Jewellery & Retail",
-    years: "2026",
-    description:
-      "Stall branding at T-Hub and festival activations for GRT, blending retail presence with cultural moments.",
-    placeholder: true,
-    category: "festival-activation",
-  },
-  {
-    title: "Zee Telugu — Mango Fest",
-    tag: "Media & Entertainment",
-    years: "2026",
-    description:
-      "Brand presence for Zee Telugu at Mango Fest, a high-footfall seasonal consumer festival.",
-    placeholder: true,
-    category: "festival-activation",
-  },
-  {
-    title: "Bosch — Mango Fest",
-    tag: "Consumer Tech",
-    years: "2026",
-    description:
-      "Mango Fest activation putting Bosch's consumer offerings in front of festival crowds.",
-    placeholder: true,
-    category: "festival-activation",
-  },
-  {
-    title: "Freedom",
-    tag: "FMCG",
-    years: "2026",
-    description:
-      "Festival-scale brand presence for Freedom Refined Oil at Medaram Jatara and Mango Fest activations.",
-    placeholder: true,
-    category: "festival-activation",
+    category: "experiential-marketing",
   },
   {
     title: "CMR",
-    tag: "Real Estate",
+    tag: "Retail",
     years: "2026",
     description:
       "Promoter-led residential community activations for CMR across 30+ gated communities.",
     placeholder: true,
     category: "experiential-marketing",
+  },
+  {
+    title: "Tanishq",
+    tag: "Jewellery",
+    years: "2026",
+    description:
+      "RWA activations paired with a seven-day Tata Ace van campaign, reaching affluent residential catchments.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Mahindra",
+    tag: "Automotive",
+    years: "2026",
+    description:
+      "Residential community activation putting Mahindra vehicles in front of family buyers at home.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Hyundai",
+    tag: "Automotive",
+    years: "2026",
+    description:
+      "RWA activation programme showcasing the Hyundai range inside gated communities.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Citroën",
+    tag: "Automotive",
+    years: "2026",
+    description:
+      "Community-level brand experience for Citroën, targeting first-time and upgrade car buyers.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Škoda",
+    tag: "Automotive",
+    years: "2026",
+    description:
+      "RWA activation for Škoda run alongside the Mango Fest community programme.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "GRT Jewellers — RWA Activation",
+    tag: "Jewellery",
+    years: "2026",
+    description:
+      "Residential community activations bringing GRT's collections directly to household audiences.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "MTR Foods",
+    tag: "FMCG",
+    years: "2026",
+    description:
+      "RWA sampling and engagement programme for MTR's food range.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "BIG FM — Big Pickle Mix",
+    tag: "Media & Events",
+    years: "2026",
+    description:
+      "A seasonal community activation built around home pickle-making — a culturally rooted format that drew families into the brand experience.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Coca-Cola — Apartment Activity",
+    tag: "Beverages",
+    years: "2024",
+    description:
+      "Apartment-complex sampling and engagement programme for Coca-Cola across Hyderabad residential clusters.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Unacademy",
+    tag: "Education",
+    years: "2026",
+    description:
+      "RWA activation introducing Unacademy's programmes to parents inside residential communities.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Kedia Rice",
+    tag: "FMCG",
+    years: "2025",
+    description:
+      "Residential community sampling and engagement for Kedia's rice portfolio.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "ACT Fibernet",
+    tag: "Telecom",
+    years: "2025",
+    description:
+      "RWA activation driving broadband sign-ups directly inside target residential communities.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Porter",
+    tag: "Logistics",
+    years: "2025",
+    description:
+      "Community activation introducing Porter's on-demand logistics service to household users.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Urban Rise",
+    tag: "Real Estate",
+    years: "2026",
+    description:
+      "Residential community programme showcasing Urban Rise developments to prospective buyers.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "Sampangi Infra",
+    tag: "Real Estate",
+    years: "2025",
+    description:
+      "RWA activation programme for Sampangi Infra's residential projects.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+  {
+    title: "TDH",
+    tag: "Consumer",
+    years: "2025",
+    description:
+      "Residential community activation programme for TDH.",
+    placeholder: true,
+    category: "experiential-marketing",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 12. CSR CAMPAIGNS
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "RE Sustainability / Ramky — Eco Ganesh Drive",
+    tag: "CSR",
+    years: "2024",
+    description:
+      "Eco-friendly Ganesh idol distribution across Kapra and surrounding wards, pairing environmental messaging with community participation.",
+    placeholder: true,
+    category: "csr",
+  },
+  {
+    title: "BIG FM & SBI — Plants Donation Campaign",
+    tag: "CSR",
+    years: "2026",
+    description:
+      "A green CSR campaign with BIG FM and SBI distributing saplings through community touchpoints.",
+    placeholder: true,
+    category: "csr",
+  },
+  {
+    title: "UPL — Plantation Drive",
+    tag: "CSR",
+    years: "2026",
+    description:
+      "Sapling supply and plantation programme supporting UPL's environmental commitments.",
+    placeholder: true,
+    category: "csr",
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 13. OTHERS
+  // ─────────────────────────────────────────────────────────────
+  {
+    title: "AP Assembly & Lok Sabha Elections",
+    tag: "Public Affairs",
+    years: "2024",
+    description:
+      "Large-scale multi-constituency campaign support across Andhra Pradesh — LED and L-shape van fleets, 3D vehicles and on-ground field teams deployed for candidates and party units across Anantapur, Ongole, Guntur, Amalapuram, Gudivada, Tuni, Prakasam and more.",
+    placeholder: true,
+    category: "others",
+  },
+  {
+    title: "Telangana Election Campaigns",
+    tag: "Public Affairs",
+    years: "2023–2024",
+    description:
+      "Constituency-level campaign execution across Telangana including BJP MP election work, Zaheerabad and Nizamabad campaigns, and hoarding programmes.",
+    placeholder: true,
+    category: "others",
+  },
+  {
+    title: "Maharashtra Assembly Elections",
+    tag: "Public Affairs",
+    years: "2024",
+    description:
+      "Campaign support for candidates in the Maharashtra assembly elections, extending our election capability beyond the Telugu states.",
+    placeholder: true,
+    category: "others",
   },
   {
     title: "BJP — Municipal Election Campaign",
@@ -396,48 +1265,31 @@ export const caseStudies: CaseStudy[] = [
     category: "others",
   },
   {
-    title: "Zomato",
-    tag: "Food Tech",
-    years: "2026",
+    title: "KSMCA — Social Media & PR",
+    tag: "Digital",
+    years: "2025–2026",
     description:
-      "LED arch installations marking Zomato's presence at high-traffic public locations.",
+      "An ongoing monthly retainer handling social media management and public relations for KSMCA — our digital practice running continuously alongside the on-ground work.",
     placeholder: true,
-    category: "ooh-branding",
+    category: "others",
   },
   {
-    title: "LIC",
-    tag: "Insurance",
+    title: "Syngenta — Field Manpower Supply",
+    tag: "Manpower",
     years: "2025",
     description:
-      "Mobile promotion vans carrying LIC's life insurance messaging into residential and rural markets.",
+      "Trained field manpower deployed across Syngenta's Andhra Pradesh division to support on-ground sales and demonstration activity.",
     placeholder: true,
-    category: "mobile-van-campaign",
+    category: "others",
   },
   {
-    title: "Skipper Metzer",
-    tag: "Industrial",
-    years: "2026",
+    title: "APSRTC — District Programme",
+    tag: "Transit",
+    years: "2023",
     description:
-      "Van-based brand activation for Skipper Metzer across Maharashtra.",
+      "District-level transit branding programme delivered across the APSRTC network.",
     placeholder: true,
-    category: "mobile-van-campaign",
-  },
-  {
-    title: "Godavari 5K Run",
-    tag: "Community Sports",
-    years: "2014",
-    description:
-      "A mass-participation community run along the Godavari, rallying thousands of runners and giving sponsors visibility across the entire event footprint.",
-    placeholder: true,
-    category: "rural-sports",
-  },
-  {
-    title: "Nellore 5K Run",
-    tag: "Community Sports",
-    description:
-      "A city-wide 5K run in Nellore bringing together schools, colleges, and local institutions — community engagement at street level.",
-    placeholder: true,
-    category: "rural-sports",
+    category: "others",
   },
 ];
 
