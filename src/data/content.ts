@@ -566,7 +566,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "Sustained out-of-home presence across Telangana and Andhra Pradesh: Charminar building wraps, 60+ hoardings, 50 new building sites, wall wraps, Dasara hoardings and Punjab digital walls.",
-    image: "/images/work/card-35.jpg",
+    placeholder: true,
     category: "ooh-branding",
   },
   {
@@ -611,7 +611,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Store-front and in-shop branding across five Hyderabad stores plus Narasaraopet and Tadepalligudem outlets: Kukatpally, Chandanagar, Somajiguda, AS Rao Nagar and Nizamabad.",
-    image: "/images/work/card-40.jpg",
+    placeholder: true,
     category: "ooh-branding",
   },
   {
@@ -1146,7 +1146,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Residential community activations bringing GRT's collections directly to household audiences.",
-    image: "/images/work/card-96.jpg",
+    placeholder: true,
     category: "experiential-marketing",
   },
   {
@@ -1173,7 +1173,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Apartment-complex sampling and engagement programme for Coca-Cola across Hyderabad residential clusters.",
-    image: "/images/work/card-99.jpg",
+    placeholder: true,
     category: "experiential-marketing",
   },
   {
@@ -1191,7 +1191,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Residential community sampling and engagement for Kedia's rice portfolio.",
-    image: "/images/work/card-101.jpg",
+    placeholder: true,
     category: "experiential-marketing",
   },
   {
@@ -1209,7 +1209,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Community activation introducing Porter's on-demand logistics service to household users.",
-    image: "/images/work/card-103.jpg",
+    placeholder: true,
     category: "experiential-marketing",
   },
   {
