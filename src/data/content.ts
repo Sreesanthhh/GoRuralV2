@@ -196,6 +196,12 @@ export const workCategories: WorkCategory[] = [
     short: "RWA activations, community carnivals, and live brand experiences.",
     description:
       "Inside gated communities and residential welfare associations (RWAs), we build brand experiences people can walk into: product demo zones, family carnivals, weekend markets, and engagement events that put brands in front of high-intent urban households in a trusted setting.",
+    points: [
+      "In villages the same job is done by folk performance and interactive games, which hold a rural crowd in a way a hoarding cannot.",
+      "We work with 120 folk art troupes across South India, from Puli Vesham and Burrakatha to Yakshagana and Ugadolu drum beats.",
+      "The troupe carries the brand message inside the performance, so the audience stays for the show rather than tolerating an ad.",
+    ],
+    highlight: "120 folk art troupes across South India",
   },
   {
     slug: "csr",
@@ -214,14 +220,74 @@ export const workCategories: WorkCategory[] = [
     ],
   },
   {
+    slug: "door-to-door-campaigns",
+    title: "Door To Door Campaigns",
+    icon: "House",
+    short: "One-to-one selling and sampling, household by household.",
+    tagline: "Branding at the doorstep!",
+    points: [
+      "In rural India, one-to-one communication still outperforms everything else for marketing and sales activity.",
+      "We field trained promoters with the persuasive skill to turn a first doorstep conversation into a loyal customer.",
+      "It works hardest running alongside a van campaign or a mandi activation, converting the awareness those create into trial.",
+    ],
+  },
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    icon: "ChartLineUp",
+    short: "Search, social, content and paid media, measured end to end.",
+    tagline: "Performance meets perception.",
+    description:
+      "The same audiences we reach on the ground are on a phone by evening. Our digital team runs the other half of the campaign: search, social, paid media and content, with reporting that ties spend to reach, engagement and conversions rather than impressions alone.",
+    points: [
+      "Social media marketing: strategy, content, publishing, paid social and influencer work",
+      "Search engine optimisation, including local SEO",
+      "Google Ads and PPC across search, display, video and shopping",
+      "Content marketing: blogs, reels, video and creatives",
+      "Branding and design: identity, brochures and digital creative",
+      "Web development: responsive sites, landing pages and e-commerce",
+      "Email and WhatsApp marketing with automation and analytics",
+      "Video production, corporate reels and content strategy",
+      "PR and celebrity management",
+      "Monthly analytics and growth reporting",
+    ],
+  },
+  {
     slug: "others",
     title: "Others",
     icon: "CirclesThreePlus",
-    short: "Election campaigns, research, and everything in between.",
+    short: "Election campaigns, public-sector work, and everything between.",
     description:
       "Some campaigns don't fit a neat box: election outreach, rural research, public-sector communication, and one-off special projects. If it needs on-ground execution at scale, we've probably done it, and if we haven't, we'll figure it out.",
+    points: [
+      "Police and public-safety work, including FIT COP 2022 at the Telangana Police Command and Control Centre, Surakshana Dinotsavam and police vehicle rallies.",
+      "Civic and state occasions: Telangana Formation Day, the Tiranga March marking seventy-five years of independence, and Khammam Sambaralu.",
+      "Election outreach, rural research and special projects that need execution at scale on short notice.",
+    ],
   },
 ];
+
+/**
+ * Folk performance is how a brand message actually travels in a village, and
+ * the company's standing network of troupes is the least reproducible thing
+ * it owns. Taken from the 2025 corporate profile.
+ */
+export const folkArts = {
+  groups: 120,
+  region: "South India",
+  forms: [
+    "Puli Vesham",
+    "Burrakatha",
+    "Dasakathia",
+    "Palla Lavni",
+    "Yakshagana",
+    "Butta Bommalu",
+    "Palle Sudhulu",
+    "Ugadolu Drum Beats",
+    "Mimicry",
+    "Magic Shows",
+  ],
+};
 
 export type CaseStudy = {
   title: string;

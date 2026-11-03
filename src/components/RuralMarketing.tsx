@@ -2,7 +2,13 @@
 
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
-import { workCategories, caseStudies, clients, stats } from "@/data/content";
+import {
+  workCategories,
+  caseStudies,
+  clients,
+  stats,
+  folkArts,
+} from "@/data/content";
 import { SlideInSection } from "./AnimatedSection";
 
 /** How many archived campaigns sit behind each service. */
@@ -33,7 +39,7 @@ export function RuralMarketing() {
             Rural Marketing
           </h2>
           <p className="mt-4 text-ink-soft text-base sm:text-lg">
-            Thirteen services, ordered by how much of the work they actually
+            Fifteen services, ordered by how much of the work they actually
             account for. Each number is the campaigns in our archive behind
             that service. Open any row to read them.
           </p>
@@ -84,6 +90,30 @@ export function RuralMarketing() {
             );
           })}
         </ul>
+
+        {/* The troupe network is the least reproducible thing the company
+            owns, so the names of the forms are the content. Set as a plain
+            run of display type rather than a card grid or an icon row. */}
+        <div className="mt-16 max-w-4xl">
+          <span className="font-utility text-xs font-bold uppercase tracking-widest text-brand-red">
+            How the message travels
+          </span>
+          <p className="mt-3 max-w-2xl text-ink-soft text-base sm:text-lg">
+            In a village the crowd stays for the performance, not the
+            advertisement. We work with {folkArts.groups} folk art troupes
+            across {folkArts.region} who carry the brand inside the show.
+          </p>
+          <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 sm:gap-x-8">
+            {folkArts.forms.map((form) => (
+              <li
+                key={form}
+                className="font-display text-base text-ink/75 sm:text-lg"
+              >
+                {form}
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className="mt-12 flex flex-col gap-6 bg-ink p-8 text-white sm:flex-row sm:items-end sm:justify-between md:p-10">
           <div>
