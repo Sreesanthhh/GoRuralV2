@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, ReactNode, CSSProperties } from "react";
+import React, { useCallback, useRef, ReactNode, CSSProperties } from "react";
 
 interface GlowCardProps {
   children: ReactNode;
@@ -39,20 +39,22 @@ const GlowCard: React.FC<GlowCardProps> = ({
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    // Track the pointer relative to this card's own bounding box, not the
-    // viewport — the spotlight only appears when the cursor is actually
-    // near this specific card, and never needs border-masking tricks.
-    const syncPointer = (e: PointerEvent) => {
-      const el = cardRef.current;
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      el.style.setProperty("--x", (e.clientX - rect.left).toFixed(0));
-      el.style.setProperty("--y", (e.clientY - rect.top).toFixed(0));
-    };
+  // Tracked on the card itself rather than on `document`, so only the card
+  // under the cursor measures itself. A document-level listener meant every
+  // card on the page forced a layout on every pointer move.
+  const syncPointer = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    const el = cardRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    el.style.setProperty("--x", (e.clientX - rect.left).toFixed(0));
+    el.style.setProperty("--y", (e.clientY - rect.top).toFixed(0));
+  }, []);
 
-    document.addEventListener("pointermove", syncPointer);
-    return () => document.removeEventListener("pointermove", syncPointer);
+  const clearPointer = useCallback(() => {
+    const el = cardRef.current;
+    if (!el) return;
+    el.style.removeProperty("--x");
+    el.style.removeProperty("--y");
   }, []);
 
   const hue = glowColorMap[glowColor];
@@ -76,6 +78,8 @@ const GlowCard: React.FC<GlowCardProps> = ({
     <div
       ref={cardRef}
       style={getInlineStyles()}
+      onPointerMove={syncPointer}
+      onPointerLeave={clearPointer}
       className={`
         ${getSizeClasses()}
         ${!customSize ? "aspect-[3/4]" : ""}

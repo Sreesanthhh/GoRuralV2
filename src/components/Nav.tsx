@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { List, X } from "@phosphor-icons/react/dist/ssr";
 import { motion, AnimatePresence } from "framer-motion";
 import NavHeader from "@/components/ui/nav-header";
@@ -23,7 +24,13 @@ export function Nav({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
     // The homepage hero has its own built-in header, so this sticky nav
     // only reveals itself once the user scrolls past it — avoiding two
     // overlapping logo/nav bars stacked on the first screen.
-    const onScroll = () => setScrolled(window.scrollY > window.innerHeight - 96);
+    const onScroll = () => {
+      const past = window.scrollY > window.innerHeight - 96;
+      setScrolled(past);
+      // Collapse the mobile sheet when the bar hides itself again, otherwise
+      // it stays open behind the hero and traps clicks on the way back up.
+      if (!past) setOpen(false);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -37,8 +44,15 @@ export function Nav({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
           : "-translate-y-full opacity-0 pointer-events-none bg-transparent"
       }`}
     >
-      <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 md:h-20 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-2 shrink-0">
+      <nav
+        aria-label="Primary"
+        className="mx-auto max-w-7xl px-5 sm:px-8 h-16 md:h-20 flex items-center justify-between"
+      >
+        <Link
+          href="/"
+          aria-label="Go Rural India, home"
+          className="flex items-center gap-2 shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+        >
           <Image
             src="/images/logo.png"
             alt="Go Rural India"
@@ -47,25 +61,28 @@ export function Nav({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
             className="h-9 w-[47px] md:h-11 md:w-[57px]"
             priority
           />
-        </a>
+        </Link>
 
         <div className="hidden md:block">
           <NavHeader links={links} />
         </div>
 
         <div className="hidden md:block">
-          <a
+          <Link
             href="/#contact"
-            className="btn-shine inline-flex items-center rounded-full bg-brand-red px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-red-dark active:scale-[0.97] transition-all duration-200 cursor-pointer"
+            className="btn-shine inline-flex items-center rounded-full bg-brand-red px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-red-dark active:scale-[0.97] transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
           >
             Get a Proposal
-          </a>
+          </Link>
         </div>
 
         <button
+          type="button"
           aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="nav-mobile-menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden -mr-2 p-2 text-ink cursor-pointer"
+          className="md:hidden -mr-2 p-2 text-ink cursor-pointer rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
         >
           {open ? <X size={26} weight="bold" /> : <List size={26} weight="bold" />}
         </button>
@@ -74,6 +91,7 @@ export function Nav({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
       <AnimatePresence>
         {open && (
           <motion.div
+            id="nav-mobile-menu"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -82,22 +100,22 @@ export function Nav({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
           >
             <div className="flex flex-col px-5 py-4 gap-1">
               {links.map((l) => (
-                <a
+                <Link
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
                   className="py-3 text-base font-semibold text-ink-soft active:text-brand-red transition-colors"
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
-              <a
+              <Link
                 href="/#contact"
                 onClick={() => setOpen(false)}
                 className="btn-shine mt-2 inline-flex items-center justify-center rounded-full bg-brand-red px-5 py-3 text-sm font-semibold text-white"
               >
                 Get a Proposal
-              </a>
+              </Link>
               <a
                 href={company.phoneHref}
                 className="mt-2 text-center text-sm text-ink-soft"

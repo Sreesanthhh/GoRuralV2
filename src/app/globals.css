@@ -22,7 +22,7 @@
   --color-ink: var(--color-ink);
   --color-ink-soft: var(--color-ink-soft);
   --color-line: var(--color-line);
-  --font-display: var(--font-poppins);
+  --font-display: var(--font-archivo);
   --font-body: var(--font-manrope);
 
   /* shadcn-style semantic aliases, mapped onto the existing brand tokens
@@ -50,7 +50,29 @@
 }
 
 html {
+  /* No-JS fallback for in-page anchors; Lenis turns this off while it drives
+     the scroll itself, so the two never animate the same jump twice. */
   scroll-behavior: smooth;
+}
+
+/* Headlines break on sense rather than on whatever fits, and body copy stops
+   leaving a single word stranded on the last line. */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+/* Every interactive element gets a visible keyboard ring, including the ones
+   that do not set one themselves. */
+:focus-visible {
+  outline: 2px solid var(--color-brand-red);
+  outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -70,6 +92,12 @@ html {
 ::selection {
   background: var(--color-brand-amber);
   color: var(--color-ink);
+}
+
+/* The hero wordmark set slightly expanded, the way hand-painted signwriting
+   and hoarding lettering sits. Uses Archivo's width axis. */
+.display-wide {
+  font-stretch: 115%;
 }
 
 /* Diagonal light sweep on hover — same effect as ui/shine-hover.tsx,
@@ -100,4 +128,24 @@ html {
 
 .btn-shine:hover::before {
   background-position: -100% 0;
+}
+
+/* Horizontal filter rail on small screens: scrollable, snapped, no scrollbar. */
+.filter-rail {
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+
+.filter-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-rail > * {
+  scroll-snap-align: start;
+}
+
+@media (min-width: 40rem) {
+  .filter-rail {
+    scroll-snap-type: none;
+  }
 }

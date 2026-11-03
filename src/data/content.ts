@@ -55,7 +55,7 @@ export const workCategories: WorkCategory[] = [
     points: [
       "Rural India's mandis, haats, melas and special village trade days drive billions of rupees in annual commerce.",
       "These vibrant local markets represent high-impact touchpoints for brands to connect directly with consumers.",
-      "Recognizing these vibrant marketplaces as untapped economic hubs, GoRural India has designed a series of targeted initiatives to engage and empower these grassroots trading centers.",
+      "Recognising these vibrant marketplaces as untapped economic hubs, GoRural India has designed a series of targeted initiatives to engage and empower these grassroots trading centres.",
     ],
   },
   {
@@ -64,7 +64,7 @@ export const workCategories: WorkCategory[] = [
     icon: "Buildings",
     short: "Building wraps, hoardings, wall paintings, arches, and more.",
     description:
-      "From high-rise building wraps to village wall paintings, our out-of-home work makes brands physically impossible to miss — executed end to end, with photographic proof of every unit.",
+      "From high-rise building wraps to village wall paintings, our out-of-home work makes brands physically impossible to miss. Every unit is executed end to end, with photographic proof.",
     points: [
       "Hoardings",
       "Building Wraps",
@@ -74,7 +74,7 @@ export const workCategories: WorkCategory[] = [
       "Wall Paintings",
       "Retail Store Branding",
       "Arch Branding",
-      "Innovations — Hut & Boat Branding",
+      "Innovations: Hut & Boat Branding",
     ],
   },
   {
@@ -83,7 +83,7 @@ export const workCategories: WorkCategory[] = [
     icon: "Megaphone",
     short: "Regional creators and local voices your audience actually trusts.",
     description:
-      "In rural markets, trust travels through familiar voices. We pair brands with regional influencers, local creators, and community figures — combining their on-ground presence with short-form content that carries your message into feeds and phone screens across the heartland.",
+      "In rural markets, trust travels through familiar voices. We pair brands with regional influencers, local creators, and community figures, combining their on-ground presence with short-form content that carries your message into feeds and phone screens across the heartland.",
   },
   {
     slug: "festival-activation",
@@ -114,7 +114,7 @@ export const workCategories: WorkCategory[] = [
     tagline: "Transforming Screen Time into Brand Time",
     points: [
       "Movies possess an unmatched ability to attract and engage mass audiences throughout the year.",
-      "Through our strong partnerships with leading theatre networks across South India, GoRural India offers brands high-impact, cost-effective promotions — both on-screen and off-screen.",
+      "Through our strong partnerships with leading theatre networks across South India, GoRural India offers brands high-impact, cost-effective promotions, both on-screen and off-screen.",
       "A perfect blend of entertainment and brand visibility that delivers measurable results.",
     ],
   },
@@ -127,7 +127,7 @@ export const workCategories: WorkCategory[] = [
     points: [
       "For brands aiming to engage young audiences, GoRural India is the perfect partner.",
       "With strong associations across 430 colleges in rural and semi-urban regions, we offer a ready-to-activate platform for youth-focused campaigns, events and brand experiences.",
-      "Reach the next generation of consumers — where aspiration meets opportunity.",
+      "Reach the next generation of consumers, where aspiration meets opportunity.",
     ],
     highlight: "430 colleges across rural & semi-urban India",
   },
@@ -137,7 +137,7 @@ export const workCategories: WorkCategory[] = [
     icon: "Microphone",
     short: "Dealer meets, award nights, and corporate events end-to-end.",
     description:
-      "From dealer conferences and award nights at five-star venues to product launches and public-sector events, we handle the full stack: venue, staging, AV, branding, hospitality, and show flow — so the brand team can focus on their guests, not the logistics.",
+      "From dealer conferences and award nights at five-star venues to product launches and public-sector events, we handle the full stack: venue, staging, AV, branding, hospitality, and show flow, so the brand team can focus on their guests, not the logistics.",
   },
   {
     slug: "rural-sports",
@@ -145,7 +145,7 @@ export const workCategories: WorkCategory[] = [
     icon: "PersonSimpleRun",
     short: "Community runs and sporting events that rally whole towns.",
     description:
-      "Mass-participation sports — 5K runs, kabaddi tournaments, cricket leagues — turn entire towns into brand experiences. We've organized community runs drawing thousands of participants, giving sponsors visibility that lasts far beyond race day.",
+      "Mass-participation sports (5K runs, kabaddi tournaments, cricket leagues) turn entire towns into brand experiences. We have organised community runs drawing thousands of participants, giving sponsors visibility that lasts far beyond race day.",
   },
   {
     slug: "experiential-marketing",
@@ -153,7 +153,7 @@ export const workCategories: WorkCategory[] = [
     icon: "Sparkle",
     short: "RWA activations, community carnivals, and live brand experiences.",
     description:
-      "Inside gated communities and residential welfare associations (RWAs), we build brand experiences people can walk into — product demo zones, family carnivals, weekend markets, and engagement events that put brands in front of high-intent urban households in a trusted setting.",
+      "Inside gated communities and residential welfare associations (RWAs), we build brand experiences people can walk into: product demo zones, family carnivals, weekend markets, and engagement events that put brands in front of high-intent urban households in a trusted setting.",
   },
   {
     slug: "csr",
@@ -163,8 +163,8 @@ export const workCategories: WorkCategory[] = [
     tagline: "A humane perspective!",
     points: [
       "GoRural India partners with brands to design and execute impactful CSR initiatives that strengthen both social value and brand equity.",
-      "Our action-driven programs span environment, consumer welfare, employee engagement, and community development, helping organizations build a positive and responsible image.",
-      "Notable initiatives include the Village Catalyst Model and the 'Save a Life' Tour, both recognized for creating meaningful social impact.",
+      "Our action-driven programs span environment, consumer welfare, employee engagement, and community development, helping organisations build a positive and responsible image.",
+      "Notable initiatives include the Village Catalyst Model and the 'Save a Life' Tour, both recognised for creating meaningful social impact.",
     ],
   },
   {
@@ -173,7 +173,7 @@ export const workCategories: WorkCategory[] = [
     icon: "CirclesThreePlus",
     short: "Election campaigns, research, and everything in between.",
     description:
-      "Some campaigns don't fit a neat box — election outreach, rural research, public-sector communication, and one-off special projects. If it needs on-ground execution at scale, we've probably done it, and if we haven't, we'll figure it out.",
+      "Some campaigns don't fit a neat box: election outreach, rural research, public-sector communication, and one-off special projects. If it needs on-ground execution at scale, we've probably done it, and if we haven't, we'll figure it out.",
   },
 ];
 
@@ -192,11 +192,11 @@ export const caseStudies: CaseStudy[] = [
   // 1. MOBILE VAN CAMPAIGN
   // ─────────────────────────────────────────────────────────────
   {
-    title: "TVS Motor — Multi-State LED Van Programme",
+    title: "TVS Motor: Multi-State LED Van Programme",
     tag: "Mobile Van",
     years: "2024–2026",
     description:
-      "A continuous multi-year LED and demo van programme for TVS Motor spanning Andhra Pradesh, Telangana, Karnataka, Tamil Nadu, Gujarat, Madhya Pradesh, Maharashtra, Uttar Pradesh, Bihar, Jharkhand, Odisha, Chhattisgarh and West Bengal — covering the Raider, Radeon, Apache, Star City, Sport, Jupiter and NTorq lines with LED screens, L-shape displays and demo units.",
+      "A continuous multi-year LED and demo van programme for TVS Motor spanning Andhra Pradesh, Telangana, Karnataka, Tamil Nadu, Gujarat, Madhya Pradesh, Maharashtra, Uttar Pradesh, Bihar, Jharkhand, Odisha, Chhattisgarh and West Bengal. The fleet covers the Raider, Radeon, Apache, Star City, Sport, Jupiter and NTorq lines with LED screens, L-shape displays and demo units.",
     placeholder: true,
     category: "mobile-van-campaign",
   },
@@ -205,7 +205,7 @@ export const caseStudies: CaseStudy[] = [
     tag: "Mobile Van",
     years: "2025–2026",
     description:
-      "Multi-van retail campaigns across Telangana, Hyderabad and Andhra Pradesh — scaling from 5 vans over 20 days to a 10-van, 30-day deployment.",
+      "Multi-van retail campaigns across Telangana, Hyderabad and Andhra Pradesh, scaling from 5 vans over 20 days to a 10-van, 30-day deployment.",
     placeholder: true,
     category: "mobile-van-campaign",
   },
@@ -214,7 +214,7 @@ export const caseStudies: CaseStudy[] = [
     tag: "Agri Business",
     years: "2024–2026",
     description:
-      "Sustained van campaigns for Syngenta's crop-protection portfolio — Incipio, Sarvam, Udaan, Simodis Cotton and Vestoria Pro — using branded Tata Ace and LED vehicles across Andhra Pradesh and Telangana.",
+      "Sustained van campaigns for Syngenta's crop-protection portfolio (Incipio, Sarvam, Udaan, Simodis Cotton and Vestoria Pro) using branded Tata Ace and LED vehicles across Andhra Pradesh and Telangana.",
     placeholder: true,
     category: "mobile-van-campaign",
   },
@@ -241,7 +241,7 @@ export const caseStudies: CaseStudy[] = [
     tag: "Agri Business",
     years: "2024–2026",
     description:
-      "Multi-van crop-science campaigns across Karimnagar, Jangaon and Peddapalli, including the NewGen product line — scaling to a 4-van deployment.",
+      "Multi-van crop-science campaigns across Karimnagar, Jangaon and Peddapalli, including the NewGen product line, scaling to a 4-van deployment.",
     placeholder: true,
     category: "mobile-van-campaign",
   },
@@ -457,16 +457,16 @@ export const caseStudies: CaseStudy[] = [
   // 2. HAAT / MELA / MANDI ACTIVATIONS
   // ─────────────────────────────────────────────────────────────
   {
-    title: "TVS Motor — Pan-India Mandi Programme",
+    title: "TVS Motor: Pan-India Mandi Programme",
     tag: "Mandi Activation",
     years: "2025–2026",
     description:
-      "Our largest running programme: LED demo vans working the weekly mandi circuit across twelve states — Uttar Pradesh, Rajasthan, Haryana, Bihar, Odisha, Jharkhand, West Bengal, Chhattisgarh, Maharashtra, Madhya Pradesh, Tamil Nadu and AP/Telangana — with route plans built around each market's trading day and repeatedly extended on client request.",
+      "Our largest running programme: LED demo vans working the weekly mandi circuit across twelve states (Uttar Pradesh, Rajasthan, Haryana, Bihar, Odisha, Jharkhand, West Bengal, Chhattisgarh, Maharashtra, Madhya Pradesh, Tamil Nadu and AP/Telangana) with route plans built around each market's trading day and repeatedly extended on client request.",
     placeholder: true,
     category: "haat-mela-mandi-activations",
   },
   {
-    title: "TVS Sport — Mandi Mileage Challenge",
+    title: "TVS Sport: Mandi Mileage Challenge",
     tag: "Mandi Activation",
     years: "2026",
     description:
@@ -475,7 +475,7 @@ export const caseStudies: CaseStudy[] = [
     category: "haat-mela-mandi-activations",
   },
   {
-    title: "TVS — Mega Loan Mela",
+    title: "TVS: Mega Loan Mela",
     tag: "Mandi Activation",
     years: "2024",
     description:
@@ -484,7 +484,7 @@ export const caseStudies: CaseStudy[] = [
     category: "haat-mela-mandi-activations",
   },
   {
-    title: "Chambal Fertilisers — PMKSK Retailer Arches",
+    title: "Chambal Fertilisers: PMKSK Retailer Arches",
     tag: "Agri Retail",
     years: "2025",
     description:
@@ -506,16 +506,16 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Freedom Refined Oil — Charminar Building Wraps",
+    title: "Freedom Refined Oil: Charminar Building Wraps",
     tag: "Building Branding",
     years: "2025–2026",
     description:
-      "A rolling six-month building-wrap programme at Charminar — one of Hyderabad's highest-footfall landmarks — with periodic flex changes to keep creative fresh.",
+      "A rolling six-month building-wrap programme at Charminar, one of Hyderabad's highest-footfall landmarks, with periodic flex changes to keep creative fresh.",
     placeholder: true,
     category: "ooh-branding",
   },
   {
-    title: "TVS Motor — Building Wraps & Hoardings",
+    title: "TVS Motor: Building Wraps & Hoardings",
     tag: "OOH",
     years: "2024–2026",
     description:
@@ -524,7 +524,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "TVS Motor — Arch & Pandal Branding",
+    title: "TVS Motor: Arch & Pandal Branding",
     tag: "OOH",
     years: "2024–2025",
     description:
@@ -533,7 +533,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "TVS Motor — Bus Shelter Campaign",
+    title: "TVS Motor: Bus Shelter Campaign",
     tag: "OOH",
     years: "2024",
     description:
@@ -542,7 +542,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Zomato — LED Arch Installations",
+    title: "Zomato: LED Arch Installations",
     tag: "OOH",
     years: "2026",
     description:
@@ -551,7 +551,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Kalamandir / KLM — LED Arch Programme",
+    title: "Kalamandir / KLM: LED Arch Programme",
     tag: "OOH",
     years: "2024–2025",
     description:
@@ -560,16 +560,16 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "GRT Jewellers — Retail Branding",
+    title: "GRT Jewellers: Retail Branding",
     tag: "Jewellery & Retail",
     years: "2025",
     description:
-      "Store-front and in-shop branding across five Hyderabad stores plus Narasaraopet and Tadepalligudem outlets — Kukatpally, Chandanagar, Somajiguda, AS Rao Nagar and Nizamabad.",
+      "Store-front and in-shop branding across five Hyderabad stores plus Narasaraopet and Tadepalligudem outlets: Kukatpally, Chandanagar, Somajiguda, AS Rao Nagar and Nizamabad.",
     placeholder: true,
     category: "ooh-branding",
   },
   {
-    title: "Tata BlueScope Steel — Auto Branding",
+    title: "Tata BlueScope Steel: Auto Branding",
     tag: "Transit Branding",
     years: "2026",
     description:
@@ -578,7 +578,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "TVS NTorq — Auto Branding",
+    title: "TVS NTorq: Auto Branding",
     tag: "Transit Branding",
     years: "2025",
     description:
@@ -587,7 +587,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Gemini TV — Building Wraps",
+    title: "Gemini TV: Building Wraps",
     tag: "Media",
     years: "2024",
     description:
@@ -596,16 +596,16 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Vodafone — Wall Painting",
+    title: "Vodafone: Wall Painting",
     tag: "Rural OOH",
     years: "2026",
     description:
-      "Village and roadside wall-painting campaign — the most durable, lowest-cost-per-impression medium in rural markets.",
+      "Village and roadside wall-painting campaign, the most durable, lowest-cost-per-impression medium in rural markets.",
     placeholder: true,
     category: "ooh-branding",
   },
   {
-    title: "Nuziveedu Seeds — Digital Walls",
+    title: "Nuziveedu Seeds: Digital Walls",
     tag: "Rural OOH",
     years: "2025",
     description:
@@ -614,7 +614,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Crystal Crop — Digital Walls",
+    title: "Crystal Crop: Digital Walls",
     tag: "Rural OOH",
     years: "2026",
     description:
@@ -623,7 +623,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Coromandel — Retail Board Network",
+    title: "Coromandel: Retail Board Network",
     tag: "Rural OOH",
     years: "2025",
     description:
@@ -632,7 +632,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Swiggy — Restaurant & Rider Branding",
+    title: "Swiggy: Restaurant & Rider Branding",
     tag: "Food Tech",
     years: "2024",
     description:
@@ -641,7 +641,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "CMR — Dasara LED Arch",
+    title: "CMR: Dasara LED Arch",
     tag: "Retail",
     years: "2024",
     description:
@@ -650,16 +650,16 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Casagrand — Khairatabad Ganesh LED Arch",
+    title: "Casagrand: Khairatabad Ganesh LED Arch",
     tag: "Real Estate",
     years: "2026",
     description:
-      "Single-side LED arch at Khairatabad Ganesh — one of Hyderabad's highest-footfall festival sites.",
+      "Single-side LED arch at Khairatabad Ganesh, one of Hyderabad's highest-footfall festival sites.",
     placeholder: true,
     category: "ooh-branding",
   },
   {
-    title: "aha — Khairatabad LED Arch Innovation",
+    title: "aha: Khairatabad LED Arch Innovation",
     tag: "Media & OTT",
     years: "2024",
     description:
@@ -668,7 +668,7 @@ export const caseStudies: CaseStudy[] = [
     category: "ooh-branding",
   },
   {
-    title: "Fortune — Hoardings",
+    title: "Fortune: Hoardings",
     tag: "FMCG",
     years: "2024",
     description:
@@ -681,7 +681,7 @@ export const caseStudies: CaseStudy[] = [
   // 4. RURAL INFLUENCER CAMPAIGN
   // ─────────────────────────────────────────────────────────────
   {
-    title: "TVS Raider — Influencer Campaign",
+    title: "TVS Raider: Influencer Campaign",
     tag: "Influencer Marketing",
     years: "2026",
     description:
@@ -690,7 +690,7 @@ export const caseStudies: CaseStudy[] = [
     category: "rural-influencer-campaign",
   },
   {
-    title: "TVS — Dasara Influencer Shoot",
+    title: "TVS: Dasara Influencer Shoot",
     tag: "Influencer Marketing",
     years: "2025",
     description:
@@ -699,16 +699,16 @@ export const caseStudies: CaseStudy[] = [
     category: "rural-influencer-campaign",
   },
   {
-    title: "TVS — Mandi Influencer Integration",
+    title: "TVS: Mandi Influencer Integration",
     tag: "Influencer Marketing",
     years: "2026",
     description:
-      "Regional influencers embedded into the mandi van circuit across Madhya Pradesh and Maharashtra — combining on-ground demonstration with creator-led social reach.",
+      "Regional influencers embedded into the mandi van circuit across Madhya Pradesh and Maharashtra, combining on-ground demonstration with creator-led social reach.",
     placeholder: true,
     category: "rural-influencer-campaign",
   },
   {
-    title: "TVS — Kurnool Showroom Launch",
+    title: "TVS: Kurnool Showroom Launch",
     tag: "Influencer Marketing",
     years: "2026",
     description:
@@ -725,21 +725,21 @@ export const caseStudies: CaseStudy[] = [
     tag: "Festival Activation",
     years: "2026",
     description:
-      "On-ground brand presence at the world's largest tribal congregation — LED billboards, festival branding, and activations for UltraTech Cement, Swastik Masala, and more, reaching millions of pilgrims across Telangana.",
+      "On-ground brand presence at the world's largest tribal congregation: LED billboards, festival branding, and activations for UltraTech Cement, Swastik Masala, and more, reaching millions of pilgrims across Telangana.",
     image: "/images/work/medaram-jatara-1.jpg",
     category: "festival-activation",
   },
   {
-    title: "Medaram Jatara — Multi-Brand Programme",
+    title: "Medaram Jatara: Multi-Brand Programme",
     tag: "Festival Activation",
     years: "2026",
     description:
-      "The full sponsor roster we executed at Medaram: UltraTech Cement LED arches, Wipro, Swastik Masala, Tata BlueScope Steel, Freedom, Zee Telugu, MTR and Lalith Jewellery — each with bespoke stalls, arches and branded zones across the festival footprint.",
+      "The full sponsor roster we executed at Medaram: UltraTech Cement LED arches, Wipro, Swastik Masala, Tata BlueScope Steel, Freedom, Zee Telugu, MTR and Lalith Jewellery, each with bespoke stalls, arches and branded zones across the festival footprint.",
     placeholder: true,
     category: "festival-activation",
   },
   {
-    title: "Mango Fest — Multi-Brand RWA Programme",
+    title: "Mango Fest: Multi-Brand RWA Programme",
     tag: "Festival Activation",
     years: "2025–2026",
     description:
@@ -748,34 +748,34 @@ export const caseStudies: CaseStudy[] = [
     category: "festival-activation",
   },
   {
-    title: "Ganesh Utsav — Eco Idol Programme",
+    title: "Ganesh Utsav: Eco Idol Programme",
     tag: "Festival Activation",
     years: "2024–2026",
     description:
-      "A large-scale eco-friendly Ganesh idol supply and distribution programme — over 10,000 idols for UltraTech/Aditya Birla, Titan, MTR, Hindware, JSW Energy, Ramky, Kalamandir, Landvision, Axis Energy, Green Mark, Tridasa, CMR and Heritage, combining brand visibility with an environmental message.",
+      "A large-scale eco-friendly Ganesh idol supply and distribution programme: over 10,000 idols for UltraTech/Aditya Birla, Titan, MTR, Hindware, JSW Energy, Ramky, Kalamandir, Landvision, Axis Energy, Green Mark, Tridasa, CMR and Heritage, combining brand visibility with an environmental message.",
     placeholder: true,
     category: "festival-activation",
   },
   {
-    title: "Khairatabad Ganesh — Brand Branding",
+    title: "Khairatabad Ganesh: Brand Branding",
     tag: "Festival Activation",
     years: "2024–2026",
     description:
-      "Branding elements at Khairatabad Ganesh, one of India's most-visited festival sites — executed for Shriram Finance, MTR, Polycab, Big Basket and Heritage.",
+      "Branding elements at Khairatabad Ganesh, one of India's most-visited festival sites, executed for Shriram Finance, MTR, Polycab, Big Basket and Heritage.",
     placeholder: true,
     category: "festival-activation",
   },
   {
-    title: "Dasara — Vijayawada Event Programme",
+    title: "Dasara: Vijayawada Event Programme",
     tag: "Festival Activation",
     years: "2025",
     description:
-      "Festival event execution at Vijayawada during Dasara for Adani, MTR and KEI — stage, branding and on-ground engagement across the celebration.",
+      "Festival event execution at Vijayawada during Dasara for Adani, MTR and KEI: stage, branding and on-ground engagement across the celebration.",
     placeholder: true,
     category: "festival-activation",
   },
   {
-    title: "Fortune — Bonalu Event",
+    title: "Fortune: Bonalu Event",
     tag: "Festival Activation",
     years: "2026",
     description:
@@ -784,7 +784,7 @@ export const caseStudies: CaseStudy[] = [
     category: "festival-activation",
   },
   {
-    title: "JK Cement — Simhachalam Activation",
+    title: "JK Cement: Simhachalam Activation",
     tag: "Festival Activation",
     years: "2026",
     description:
@@ -793,7 +793,7 @@ export const caseStudies: CaseStudy[] = [
     category: "festival-activation",
   },
   {
-    title: "CMR — Sankranti Decor",
+    title: "CMR: Sankranti Decor",
     tag: "Festival Activation",
     years: "2024",
     description:
@@ -806,7 +806,7 @@ export const caseStudies: CaseStudy[] = [
   // 6. FABRICATION & DIGITAL SIGNAGE
   // ─────────────────────────────────────────────────────────────
   {
-    title: "Mahyco — ICRISAT Stall",
+    title: "Mahyco: ICRISAT Stall",
     tag: "Fabrication",
     years: "2026",
     description:
@@ -815,7 +815,7 @@ export const caseStudies: CaseStudy[] = [
     category: "fabrication-digital-signage",
   },
   {
-    title: "Shriram Seeds — ICRISAT Stall",
+    title: "Shriram Seeds: ICRISAT Stall",
     tag: "Fabrication",
     years: "2026",
     description:
@@ -824,7 +824,7 @@ export const caseStudies: CaseStudy[] = [
     category: "fabrication-digital-signage",
   },
   {
-    title: "Shriram Bio Seeds — Marigold Hotel Stall",
+    title: "Shriram Bio Seeds: Marigold Hotel Stall",
     tag: "Fabrication",
     years: "2025",
     description:
@@ -833,16 +833,16 @@ export const caseStudies: CaseStudy[] = [
     category: "fabrication-digital-signage",
   },
   {
-    title: "Syngenta — LED Display Supply",
+    title: "Syngenta: LED Display Supply",
     tag: "Digital Signage",
     years: "2025–2026",
     description:
-      "Large-format LED display supply and operation — 12x8 and 14x8 rigs running 18–20 day cycles, including a 16-day Udaan deployment across Tamil Nadu.",
+      "Large-format LED display supply and operation: 12x8 and 14x8 rigs running 18–20 day cycles, including a 16-day Udaan deployment across Tamil Nadu.",
     placeholder: true,
     category: "fabrication-digital-signage",
   },
   {
-    title: "Nuziveedu Seeds — Spin Wheel Units",
+    title: "Nuziveedu Seeds: Spin Wheel Units",
     tag: "Fabrication",
     years: "2026",
     description:
@@ -851,7 +851,7 @@ export const caseStudies: CaseStudy[] = [
     category: "fabrication-digital-signage",
   },
   {
-    title: "GRT — T-Hub Stall Branding",
+    title: "GRT: T-Hub Stall Branding",
     tag: "Fabrication",
     years: "2025",
     description:
@@ -860,7 +860,7 @@ export const caseStudies: CaseStudy[] = [
     category: "fabrication-digital-signage",
   },
   {
-    title: "Tricom — Leonia Resort Selfie Booth",
+    title: "Tricom: Leonia Resort Selfie Booth",
     tag: "Fabrication",
     years: "2026",
     description:
@@ -869,7 +869,7 @@ export const caseStudies: CaseStudy[] = [
     category: "fabrication-digital-signage",
   },
   {
-    title: "Skylar — Event Backdrop & Carpet",
+    title: "Skylar: Event Backdrop & Carpet",
     tag: "Fabrication",
     years: "2025",
     description:
@@ -878,7 +878,7 @@ export const caseStudies: CaseStudy[] = [
     category: "fabrication-digital-signage",
   },
   {
-    title: "Freedom — Vehicle Fabrication",
+    title: "Freedom: Vehicle Fabrication",
     tag: "Fabrication",
     years: "2024–2026",
     description:
@@ -888,14 +888,14 @@ export const caseStudies: CaseStudy[] = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 7. THEATER BRANDING — awaiting case studies
+  // 7. THEATER BRANDING: awaiting case studies
   // ─────────────────────────────────────────────────────────────
 
   // ─────────────────────────────────────────────────────────────
   // 8. CAMPUS ACTIVATION
   // ─────────────────────────────────────────────────────────────
   {
-    title: "JNTU — Campus Sponsorship",
+    title: "JNTU: Campus Sponsorship",
     tag: "Campus Activation",
     years: "2024",
     description:
@@ -908,16 +908,16 @@ export const caseStudies: CaseStudy[] = [
   // 9. EVENTS & DEALER MEETS
   // ─────────────────────────────────────────────────────────────
   {
-    title: "TVS Motor — PD Awards, Taj Vivanta",
+    title: "TVS Motor: PD Awards, Taj Vivanta",
     tag: "Corporate Events",
     years: "2026",
     description:
-      "End-to-end execution of TVS's PD Awards night at Taj Vivanta — staging, AV, branding and hospitality for the dealer partner network.",
+      "End-to-end execution of TVS's PD Awards night at Taj Vivanta: staging, AV, branding and hospitality for the dealer partner network.",
     placeholder: true,
     category: "events-dealer-meets",
   },
   {
-    title: "TVS Motor — Pragathi Resorts Event",
+    title: "TVS Motor: Pragathi Resorts Event",
     tag: "Corporate Events",
     years: "2026",
     description:
@@ -926,7 +926,7 @@ export const caseStudies: CaseStudy[] = [
     category: "events-dealer-meets",
   },
   {
-    title: "TVS Motor — 3-Wheeler Chirala Launch",
+    title: "TVS Motor: 3-Wheeler Chirala Launch",
     tag: "Corporate Events",
     years: "2026",
     description:
@@ -935,7 +935,7 @@ export const caseStudies: CaseStudy[] = [
     category: "events-dealer-meets",
   },
   {
-    title: "Astral Pipes — Dealer Meets",
+    title: "Astral Pipes: Dealer Meets",
     tag: "Dealer Meets",
     years: "2025",
     description:
@@ -944,7 +944,7 @@ export const caseStudies: CaseStudy[] = [
     category: "events-dealer-meets",
   },
   {
-    title: "Priya Gold — Dealers Meet",
+    title: "Priya Gold: Dealers Meet",
     tag: "Dealer Meets",
     years: "2024",
     description:
@@ -953,7 +953,7 @@ export const caseStudies: CaseStudy[] = [
     category: "events-dealer-meets",
   },
   {
-    title: "Vodafone — Awards & Recognition Programme",
+    title: "Vodafone: Awards & Recognition Programme",
     tag: "Corporate Events",
     years: "2026",
     description:
@@ -978,12 +978,12 @@ export const caseStudies: CaseStudy[] = [
     title: "Nellore 5K Run",
     tag: "Community Sports",
     description:
-      "A city-wide 5K run in Nellore bringing together schools, colleges and local institutions — community engagement at street level.",
+      "A city-wide 5K run in Nellore bringing together schools, colleges and local institutions, with community engagement at street level.",
     placeholder: true,
     category: "rural-sports",
   },
   {
-    title: "Vodafone — Cricket Activation",
+    title: "Vodafone: Cricket Activation",
     tag: "Sports Marketing",
     years: "2026",
     description:
@@ -1014,7 +1014,7 @@ export const caseStudies: CaseStudy[] = [
     category: "experiential-marketing",
   },
   {
-    title: "BIG FM — Big Family Fest",
+    title: "BIG FM: Big Family Fest",
     tag: "Media & Events",
     years: "2026",
     description:
@@ -1032,7 +1032,7 @@ export const caseStudies: CaseStudy[] = [
     category: "experiential-marketing",
   },
   {
-    title: "TVS Motor — RWA & Test Ride Programme",
+    title: "TVS Motor: RWA & Test Ride Programme",
     tag: "RWA Activation",
     years: "2024–2026",
     description:
@@ -1095,7 +1095,7 @@ export const caseStudies: CaseStudy[] = [
     category: "experiential-marketing",
   },
   {
-    title: "GRT Jewellers — RWA Activation",
+    title: "GRT Jewellers: RWA Activation",
     tag: "Jewellery",
     years: "2026",
     description:
@@ -1113,16 +1113,16 @@ export const caseStudies: CaseStudy[] = [
     category: "experiential-marketing",
   },
   {
-    title: "BIG FM — Big Pickle Mix",
+    title: "BIG FM: Big Pickle Mix",
     tag: "Media & Events",
     years: "2026",
     description:
-      "A seasonal community activation built around home pickle-making — a culturally rooted format that drew families into the brand experience.",
+      "A seasonal community activation built around home pickle-making, a culturally rooted format that drew families into the brand experience.",
     placeholder: true,
     category: "experiential-marketing",
   },
   {
-    title: "Coca-Cola — Apartment Activity",
+    title: "Coca-Cola: Apartment Activity",
     tag: "Beverages",
     years: "2024",
     description:
@@ -1198,7 +1198,7 @@ export const caseStudies: CaseStudy[] = [
   // 12. CSR CAMPAIGNS
   // ─────────────────────────────────────────────────────────────
   {
-    title: "RE Sustainability / Ramky — Eco Ganesh Drive",
+    title: "RE Sustainability / Ramky: Eco Ganesh Drive",
     tag: "CSR",
     years: "2024",
     description:
@@ -1207,7 +1207,7 @@ export const caseStudies: CaseStudy[] = [
     category: "csr",
   },
   {
-    title: "BIG FM & SBI — Plants Donation Campaign",
+    title: "BIG FM & SBI: Plants Donation Campaign",
     tag: "CSR",
     years: "2026",
     description:
@@ -1216,7 +1216,7 @@ export const caseStudies: CaseStudy[] = [
     category: "csr",
   },
   {
-    title: "UPL — Plantation Drive",
+    title: "UPL: Plantation Drive",
     tag: "CSR",
     years: "2026",
     description:
@@ -1233,7 +1233,7 @@ export const caseStudies: CaseStudy[] = [
     tag: "Public Affairs",
     years: "2024",
     description:
-      "Large-scale multi-constituency campaign support across Andhra Pradesh — LED and L-shape van fleets, 3D vehicles and on-ground field teams deployed for candidates and party units across Anantapur, Ongole, Guntur, Amalapuram, Gudivada, Tuni, Prakasam and more.",
+      "Large-scale multi-constituency campaign support across Andhra Pradesh: LED and L-shape van fleets, 3D vehicles and on-ground field teams deployed for candidates and party units across Anantapur, Ongole, Guntur, Amalapuram, Gudivada, Tuni, Prakasam and more.",
     placeholder: true,
     category: "others",
   },
@@ -1256,7 +1256,7 @@ export const caseStudies: CaseStudy[] = [
     category: "others",
   },
   {
-    title: "BJP — Municipal Election Campaign",
+    title: "BJP: Municipal Election Campaign",
     tag: "Public Affairs",
     years: "2026",
     description:
@@ -1265,16 +1265,16 @@ export const caseStudies: CaseStudy[] = [
     category: "others",
   },
   {
-    title: "KSMCA — Social Media & PR",
+    title: "KSMCA: Social Media & PR",
     tag: "Digital",
     years: "2025–2026",
     description:
-      "An ongoing monthly retainer handling social media management and public relations for KSMCA — our digital practice running continuously alongside the on-ground work.",
+      "An ongoing monthly retainer handling social media management and public relations for KSMCA, our digital practice running continuously alongside the on-ground work.",
     placeholder: true,
     category: "others",
   },
   {
-    title: "Syngenta — Field Manpower Supply",
+    title: "Syngenta: Field Manpower Supply",
     tag: "Manpower",
     years: "2025",
     description:
@@ -1283,7 +1283,7 @@ export const caseStudies: CaseStudy[] = [
     category: "others",
   },
   {
-    title: "APSRTC — District Programme",
+    title: "APSRTC: District Programme",
     tag: "Transit",
     years: "2023",
     description:

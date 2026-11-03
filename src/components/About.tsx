@@ -16,12 +16,12 @@ export function About() {
             Who We Are
           </span>
           <h2 className="mt-3 font-display font-extrabold text-ink text-3xl sm:text-4xl md:text-[2.75rem] leading-tight">
-            We&apos;re simply passionate — and a little crazy, 24×7
+            We&apos;re simply passionate. And a little crazy, 24×7
           </h2>
           <div className="mt-6 space-y-4 text-ink-soft text-base sm:text-lg leading-relaxed">
             <p>
               Go Rural India started as a brand-building company for the
-              hinterlands — taking clients deep into Telangana and Andhra
+              hinterlands, taking clients deep into Telangana and Andhra
               Pradesh through fairs, festivals, mobile vans, and bus
               branding that mass media simply couldn&apos;t reach.
             </p>

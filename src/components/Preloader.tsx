@@ -13,14 +13,19 @@ export function Preloader() {
   const reducedMotion = useReducedMotion();
 
   useEffect(() => {
+    // Synchronising with sessionStorage, which cannot be read during SSR, so
+    // the decision has to happen after the first client render.
     if (sessionStorage.getItem(SESSION_KEY) || reducedMotion) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setPhase("done");
       sessionStorage.setItem(SESSION_KEY, "1");
       return;
     }
     sessionStorage.setItem(SESSION_KEY, "1");
 
-    const liftAt = setTimeout(() => setPhase("lifting"), 1400);
+    // Kept short on purpose: the curtain sits on top of the hero, so every
+    // extra millisecond here is added directly to Largest Contentful Paint.
+    const liftAt = setTimeout(() => setPhase("lifting"), 1000);
     // Failsafe: the overlay locks scroll, so it must never be able to get
     // stuck covering the page if animation callbacks are dropped (throttled
     // background tabs, dropped rAF, etc.).
@@ -46,7 +51,7 @@ export function Preloader() {
           aria-hidden
           initial={{ y: 0 }}
           animate={{ y: phase === "lifting" ? "-100%" : 0 }}
-          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
           onAnimationComplete={() => {
             if (phase === "lifting") setPhase("done");
           }}
@@ -80,7 +85,7 @@ export function Preloader() {
           <motion.div
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
-            transition={{ duration: 1.15, ease: "easeInOut", delay: 0.15 }}
+            transition={{ duration: 0.85, ease: "easeInOut", delay: 0.1 }}
             className="absolute bottom-16 h-[3px] w-40 origin-left rounded-full bg-gradient-to-r from-brand-red to-brand-green md:w-52"
           />
         </motion.div>

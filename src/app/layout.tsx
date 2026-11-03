@@ -1,25 +1,68 @@
 import type { Metadata } from "next";
-import { Poppins, Manrope } from "next/font/google";
+import { Archivo, Manrope } from "next/font/google";
 import { Preloader } from "@/components/Preloader";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { workCategories } from "@/data/content";
+import {
+  organisationJsonLd,
+  siteDescription,
+  siteName,
+  siteUrl,
+} from "@/lib/site";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+// Archivo is a grotesque drawn for signage and high-impact headlines, which is
+// what this company physically makes. Variable weight plus the width axis, so
+// display type can be set slightly expanded the way painted lettering is.
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
+  axes: ["wdth"],
+  display: "swap",
 });
 
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Go Rural India | Full-Service Marketing Agency, Hyderabad",
-  description:
-    "Go Rural India is a full-service marketing & advertising agency in Hyderabad blending rural, on-ground experiential campaigns with modern digital marketing. Taking your brand to hinterlands and beyond.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Go Rural India | Full-Service Marketing Agency, Hyderabad",
+    template: "%s | Go Rural India",
+  },
+  description: siteDescription,
+  applicationName: siteName,
+  keywords: [
+    "rural marketing agency",
+    "Hyderabad advertising agency",
+    "mobile van campaign",
+    "haat and mela activation",
+    "OOH branding Telangana",
+    "rural marketing Andhra Pradesh",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName,
+    locale: "en_IN",
+    url: siteUrl,
+    title: "Go Rural India | Full-Service Marketing Agency, Hyderabad",
+    description: siteDescription,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Go Rural India | Full-Service Marketing Agency, Hyderabad",
+    description: siteDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
 };
 
 export default function RootLayout({
@@ -27,15 +70,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = organisationJsonLd(workCategories.map((c) => c.title));
+
   return (
     <html
-      lang="en"
-      className={`${poppins.variable} ${manrope.variable} h-full antialiased scroll-smooth`}
+      lang="en-IN"
+      className={`${archivo.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink font-body">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"
+        >
+          Skip to content
+        </a>
         <Preloader />
         <SmoothScroll />
         {children}
+        <script
+          type="application/ld+json"
+          // Built from our own data file, not user input.
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

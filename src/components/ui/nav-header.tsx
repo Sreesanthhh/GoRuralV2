@@ -8,6 +8,13 @@ interface NavLink {
   label: string;
 }
 
+/** Position of the sliding pill behind the hovered tab. */
+type CursorPosition = {
+  left: number;
+  width: number;
+  opacity: number;
+};
+
 const defaultLinks: NavLink[] = [
   { href: "#", label: "Home" },
   { href: "#", label: "Pricing" },
@@ -17,7 +24,7 @@ const defaultLinks: NavLink[] = [
 ];
 
 function NavHeader({ links = defaultLinks }: { links?: NavLink[] }) {
-  const [position, setPosition] = useState({
+  const [position, setPosition] = useState<CursorPosition>({
     left: 0,
     width: 0,
     opacity: 0,
@@ -59,29 +66,25 @@ const Tab = ({
   children: React.ReactNode;
   href: string;
   active: boolean;
-  setPosition: any;
+  setPosition: React.Dispatch<React.SetStateAction<CursorPosition>>;
   onHover: () => void;
 }) => {
   const ref = useRef<HTMLLIElement>(null);
-  return (
-    <li
-      ref={ref}
-      onMouseEnter={() => {
-        if (!ref.current) return;
 
-        const { width } = ref.current.getBoundingClientRect();
-        setPosition({
-          width,
-          opacity: 1,
-          left: ref.current.offsetLeft,
-        });
-        onHover();
-      }}
-      className="relative z-10 block"
-    >
+  const highlight = () => {
+    if (!ref.current) return;
+    const { width } = ref.current.getBoundingClientRect();
+    setPosition({ width, opacity: 1, left: ref.current.offsetLeft });
+    onHover();
+  };
+
+  return (
+    <li ref={ref} className="relative z-10 block" onMouseEnter={highlight}>
       <a
         href={href}
-        className={`block cursor-pointer px-3 py-1.5 text-xs font-semibold uppercase transition-colors duration-200 md:px-5 md:py-3 md:text-base ${
+        // Keyboard users get the same highlight as the mouse.
+        onFocus={highlight}
+        className={`block cursor-pointer rounded-full px-3 py-1.5 text-xs font-semibold uppercase transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red md:px-5 md:py-3 md:text-base ${
           active ? "text-white" : "text-ink"
         }`}
       >
@@ -91,9 +94,10 @@ const Tab = ({
   );
 };
 
-const Cursor = ({ position }: { position: any }) => {
+const Cursor = ({ position }: { position: CursorPosition }) => {
   return (
     <motion.li
+      aria-hidden
       animate={position}
       className="absolute z-0 h-7 rounded-full bg-ink md:h-12"
     />

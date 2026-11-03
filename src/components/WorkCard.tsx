@@ -96,6 +96,7 @@ export function WorkCard({
 
       <MorphingDialogContainer>
         <MorphingDialogContent
+          ariaLabel={study.title}
           style={{ borderRadius: "24px" }}
           className="pointer-events-auto relative flex h-auto max-h-[90vh] w-full flex-col overflow-y-auto border border-line bg-white sm:w-[520px]"
         >

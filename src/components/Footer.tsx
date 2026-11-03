@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FacebookLogo,
   LinkedinLogo,
@@ -29,9 +30,9 @@ export function Footer() {
               className="h-7 w-[36px]"
             />
           </div>
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
             A full-service marketing agency taking brands from Hyderabad to
-            the hinterlands — two decades of on-ground reach, now paired with
+            the hinterlands. Two decades of on-ground reach, now paired with
             sharp digital strategy.
           </p>
           <div className="mt-6 flex items-center gap-3">
@@ -39,7 +40,7 @@ export function Footer() {
               href={company.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Facebook"
+              aria-label="Go Rural India on Facebook"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors duration-200 cursor-pointer"
             >
               <FacebookLogo size={18} weight="bold" />
@@ -48,7 +49,7 @@ export function Footer() {
               href={company.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="Go Rural India on LinkedIn"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors duration-200 cursor-pointer"
             >
               <LinkedinLogo size={18} weight="bold" />
@@ -63,12 +64,12 @@ export function Footer() {
           <ul className="mt-5 space-y-3">
             {footerLinks.map((l) => (
               <li key={l.href}>
-                <a
+                <Link
                   href={l.href}
-                  className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
+                  className="rounded-sm text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-amber"
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -107,11 +108,11 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/50 text-center">
+          <p className="text-xs text-white/60 text-center">
             © {new Date().getFullYear()} {company.legalName}. All rights
             reserved.
           </p>
-          <p className="text-xs text-white/50">
+          <p className="text-xs text-white/60">
             Taking Your Brand To Hinterlands
           </p>
         </div>

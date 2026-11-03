@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowLeft, Camera, Check } from "@phosphor-icons/react/dist/ssr";
 import { caseStudies, type WorkCategory } from "@/data/content";
 import { AnimatedSection, StaggerGroup, StaggerItem } from "./AnimatedSection";
@@ -26,13 +27,13 @@ export function CategoryDetail({ category }: { category: WorkCategory }) {
       <section className="px-5 sm:px-8 pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="mx-auto max-w-7xl">
           <AnimatedSection className="max-w-3xl">
-            <a
+            <Link
               href="/work"
-              className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-ink-soft hover:text-brand-red transition-colors duration-200"
+              className="inline-flex items-center gap-1.5 rounded-sm text-xs font-bold uppercase tracking-widest text-ink-soft hover:text-brand-red transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
             >
               <ArrowLeft size={14} weight="bold" />
               All Work
-            </a>
+            </Link>
             <span className="mt-5 block text-xs font-bold uppercase tracking-widest text-brand-red">
               Rural Marketing
             </span>
@@ -41,7 +42,7 @@ export function CategoryDetail({ category }: { category: WorkCategory }) {
             </h1>
             {category.tagline && (
               <p className="mt-3 font-display text-lg sm:text-xl font-bold text-ink">
-                – {category.tagline}
+                {category.tagline}
               </p>
             )}
             {category.description && (
@@ -79,6 +80,9 @@ export function CategoryDetail({ category }: { category: WorkCategory }) {
               <AnimatedSection className="mb-8">
                 <h2 className="font-display font-extrabold text-ink text-2xl sm:text-3xl">
                   Past campaigns
+                  <span className="ml-3 align-middle text-sm font-bold text-ink-soft">
+                    {works.length}
+                  </span>
                 </h2>
               </AnimatedSection>
               <StaggerGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,14 +113,18 @@ export function CategoryDetail({ category }: { category: WorkCategory }) {
 
           <AnimatedSection delay={0.1} className="mt-16 text-center">
             <h2 className="font-display font-extrabold text-ink text-2xl sm:text-3xl">
-              Planning a {category.title.toLowerCase()}?
+              Planning a campaign like this?
             </h2>
-            <a
+            <p className="mx-auto mt-3 max-w-lg text-sm sm:text-base text-ink-soft">
+              Tell us the brand, the geography and the dates. We will come back
+              with a costed plan.
+            </p>
+            <Link
               href="/#contact"
-              className="btn-shine mt-6 inline-flex items-center justify-center rounded-full bg-brand-red px-7 py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-brand-red/20 hover:bg-brand-red-dark active:scale-[0.97] transition-all duration-200 cursor-pointer"
+              className="btn-shine mt-6 inline-flex items-center justify-center rounded-full bg-brand-red px-7 py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-brand-red/20 hover:bg-brand-red-dark active:scale-[0.97] transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
             >
               Get a Proposal
-            </a>
+            </Link>
           </AnimatedSection>
         </div>
       </section>

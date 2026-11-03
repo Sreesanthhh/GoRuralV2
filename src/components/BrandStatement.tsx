@@ -7,8 +7,7 @@ const words: { text: string; accent?: boolean }[] = [
   { text: "brands" },
   { text: "to" },
   { text: "the" },
-  { text: "hinterlands", accent: true },
-  { text: "—" },
+  { text: "hinterlands,", accent: true },
   { text: "and" },
   { text: "beyond." },
 ];
