@@ -52,7 +52,7 @@ export function RuralMarketing() {
     <section id="services" className="px-5 sm:px-8 py-20 md:py-28">
       <SlideInSection direction="left" className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-red">
+          <span className="font-utility text-xs font-bold uppercase tracking-widest text-brand-red">
             What We Do
           </span>
           <h2 className="mt-3 font-display font-extrabold text-ink text-3xl sm:text-4xl md:text-[2.75rem] leading-tight">
@@ -91,7 +91,7 @@ export function RuralMarketing() {
                         {IconComp && <IconComp size={24} weight="bold" />}
                       </div>
                       {campaignCounts[cat.slug] > 0 && (
-                        <span className="text-right font-display text-[11px] font-extrabold uppercase leading-tight tracking-widest text-ink/45">
+                        <span className="text-right font-utility text-[11px] font-extrabold uppercase leading-tight tracking-widest text-ink/45">
                           <span className="block text-base text-ink/75">
                             {campaignCounts[cat.slug]}
                           </span>
@@ -105,7 +105,7 @@ export function RuralMarketing() {
                     <p className="mt-2 text-sm text-ink-soft leading-relaxed">
                       {cat.short}
                     </p>
-                    <span className="mt-auto inline-flex items-center gap-1 pt-4 text-xs font-bold uppercase tracking-widest text-brand-red opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <span className="mt-auto inline-flex items-center gap-1 pt-4 font-utility text-xs font-bold uppercase tracking-widest text-brand-red opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       View Work
                       <ArrowUpRight size={13} weight="bold" />
                     </span>
@@ -122,7 +122,7 @@ export function RuralMarketing() {
             className="group flex h-full flex-col justify-between rounded-2xl bg-ink p-6 text-white transition-colors duration-300 hover:bg-brand-red focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red lg:col-span-3"
           >
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-brand-amber group-hover:text-white">
+              <p className="font-utility text-xs font-bold uppercase tracking-widest text-brand-amber group-hover:text-white">
                 Not sure which one?
               </p>
               <p className="mt-3 max-w-md font-display text-xl font-bold leading-snug sm:text-2xl">
@@ -130,7 +130,7 @@ export function RuralMarketing() {
                 We will map the mix.
               </p>
             </div>
-            <span className="mt-6 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest">
+            <span className="mt-6 inline-flex items-center gap-2 font-utility text-sm font-bold uppercase tracking-widest">
               Talk to us
               <ArrowRight
                 size={16}
@@ -156,7 +156,7 @@ export function RuralMarketing() {
         </div>
 
         <div className="mt-16">
-          <p className="text-center text-xs font-bold uppercase tracking-widest text-ink-soft mb-6">
+          <p className="text-center font-utility text-xs font-bold uppercase tracking-widest text-ink-soft mb-6">
             Trusted by
           </p>
           <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">

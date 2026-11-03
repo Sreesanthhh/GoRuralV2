@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo, Manrope } from "next/font/google";
+import { Archivo, Fraunces, Manrope } from "next/font/google";
 import { Preloader } from "@/components/Preloader";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { workCategories } from "@/data/content";
@@ -11,13 +11,23 @@ import {
 } from "@/lib/site";
 import "./globals.css";
 
-// Archivo is a grotesque drawn for signage and high-impact headlines, which is
-// what this company physically makes. Variable weight plus the width axis, so
-// display type can be set slightly expanded the way painted lettering is.
+// Three faces, three jobs.
+//
+// Fraunces is the voice: a warm old-style serif with calligraphic stroke
+// contrast whose roundness sits with the logo rather than against it. The opsz
+// axis lets it get more dramatic at hero sizes and steadier at card sizes.
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  axes: ["opsz", "SOFT"],
+  display: "swap",
+});
+
+// Archivo is the utility face: small uppercase labels, counts and buttons,
+// where a squared grotesque is an asset rather than a liability.
 const archivo = Archivo({
   variable: "--font-archivo",
   subsets: ["latin"],
-  axes: ["wdth"],
   display: "swap",
 });
 
@@ -75,7 +85,7 @@ export default function RootLayout({
   return (
     <html
       lang="en-IN"
-      className={`${archivo.variable} ${manrope.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${archivo.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink font-body">
         <a

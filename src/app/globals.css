@@ -22,7 +22,11 @@
   --color-ink: var(--color-ink);
   --color-ink-soft: var(--color-ink-soft);
   --color-line: var(--color-line);
-  --font-display: var(--font-archivo);
+  /* Voice: headlines, section headings, card titles. */
+  --font-display: var(--font-fraunces);
+  /* Utility: small uppercase labels, counts, buttons. */
+  --font-utility: var(--font-archivo);
+  /* Body: paragraphs. */
   --font-body: var(--font-manrope);
 
   /* shadcn-style semantic aliases, mapped onto the existing brand tokens
@@ -94,10 +98,10 @@ li {
   color: var(--color-ink);
 }
 
-/* The hero wordmark set slightly expanded, the way hand-painted signwriting
-   and hoarding lettering sits. Uses Archivo's width axis. */
-.display-wide {
-  font-stretch: 115%;
+/* Fraunces carries an optical-size axis: display sizes get more stroke
+   contrast, small sizes stay steady. */
+.font-display {
+  font-optical-sizing: auto;
 }
 
 /* Diagonal light sweep on hover — same effect as ui/shine-hover.tsx,

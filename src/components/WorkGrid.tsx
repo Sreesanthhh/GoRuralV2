@@ -39,7 +39,7 @@ export function WorkGrid() {
       <section className="px-5 sm:px-8 pt-8 pb-10 md:pt-12 md:pb-12">
         <div className="mx-auto max-w-7xl">
           <AnimatedSection className="max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-brand-red">
+            <span className="font-utility text-xs font-bold uppercase tracking-widest text-brand-red">
               Our Work
             </span>
             <h1 className="mt-3 font-display font-extrabold text-ink text-4xl sm:text-5xl md:text-6xl leading-tight">
@@ -69,7 +69,7 @@ export function WorkGrid() {
                 type="button"
                 onClick={() => setActive(ALL)}
                 aria-pressed={active === ALL}
-                className={`shrink-0 whitespace-nowrap rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest transition-colors duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red ${
+                className={`shrink-0 whitespace-nowrap rounded-full border px-4 py-2 font-utility text-xs font-bold uppercase tracking-widest transition-colors duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red ${
                   active === ALL
                     ? "border-brand-red bg-brand-red text-white"
                     : "border-line bg-white text-ink-soft hover:border-brand-red hover:text-brand-red"
@@ -83,7 +83,7 @@ export function WorkGrid() {
                   type="button"
                   onClick={() => setActive(f.slug)}
                   aria-pressed={active === f.slug}
-                  className={`shrink-0 whitespace-nowrap rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest transition-colors duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red ${
+                  className={`shrink-0 whitespace-nowrap rounded-full border px-4 py-2 font-utility text-xs font-bold uppercase tracking-widest transition-colors duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red ${
                     active === f.slug
                       ? "border-brand-red bg-brand-red text-white"
                       : "border-line bg-white text-ink-soft hover:border-brand-red hover:text-brand-red"

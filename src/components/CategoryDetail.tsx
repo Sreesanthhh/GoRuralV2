@@ -29,12 +29,12 @@ export function CategoryDetail({ category }: { category: WorkCategory }) {
           <AnimatedSection className="max-w-3xl">
             <Link
               href="/work"
-              className="inline-flex items-center gap-1.5 rounded-sm text-xs font-bold uppercase tracking-widest text-ink-soft hover:text-brand-red transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+              className="inline-flex items-center gap-1.5 rounded-sm font-utility text-xs font-bold uppercase tracking-widest text-ink-soft hover:text-brand-red transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
             >
               <ArrowLeft size={14} weight="bold" />
               All Work
             </Link>
-            <span className="mt-5 block text-xs font-bold uppercase tracking-widest text-brand-red">
+            <span className="mt-5 block font-utility text-xs font-bold uppercase tracking-widest text-brand-red">
               Rural Marketing
             </span>
             <h1 className="mt-3 font-display font-extrabold text-brand-green text-4xl sm:text-5xl md:text-6xl leading-tight">

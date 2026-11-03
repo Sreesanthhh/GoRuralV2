@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <nav aria-label="Footer">
-          <p className="text-xs font-bold uppercase tracking-widest text-brand-amber">
+          <p className="font-utility text-xs font-bold uppercase tracking-widest text-brand-amber">
             Explore
           </p>
           <ul className="mt-5 space-y-3">
@@ -76,7 +76,7 @@ export function Footer() {
         </nav>
 
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-brand-amber">
+          <p className="font-utility text-xs font-bold uppercase tracking-widest text-brand-amber">
             Get in Touch
           </p>
           <ul className="mt-5 space-y-3 text-sm text-white/70">

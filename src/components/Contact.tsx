@@ -55,7 +55,7 @@ export function Contact() {
         className="mx-auto max-w-7xl grid lg:grid-cols-[0.9fr_1.1fr] gap-12"
       >
         <div>
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-amber">
+          <span className="font-utility text-xs font-bold uppercase tracking-widest text-brand-amber">
             Let&apos;s Talk
           </span>
           <h2 className="mt-3 font-display font-extrabold text-white text-3xl sm:text-4xl md:text-[2.75rem] leading-tight">

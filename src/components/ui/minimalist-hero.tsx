@@ -196,7 +196,7 @@ export const MinimalistHero = ({
           className="z-20 order-3 text-center md:order-1 md:text-left"
         >
           {eyebrow && (
-            <p className="mb-3 font-display text-sm font-extrabold uppercase tracking-[0.2em] text-brand-red md:text-base">
+            <p className="mb-3 font-utility text-sm font-extrabold uppercase tracking-[0.2em] text-brand-red md:text-base">
               {eyebrow}
             </p>
           )}
@@ -270,7 +270,7 @@ export const MinimalistHero = ({
         >
           <p
             aria-hidden
-            className="display-wide font-display text-6xl font-extrabold leading-[0.95] tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl"
+            className="font-display text-6xl font-extrabold leading-[0.95] tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl"
           >
             {overlayText.part1}
             <br />

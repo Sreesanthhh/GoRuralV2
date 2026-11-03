@@ -72,7 +72,7 @@ export function WorkCard({
               className="h-52 w-full"
             />
           )}
-          <div className="absolute top-3 left-3 rounded-full bg-white/90 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-brand-red">
+          <div className="absolute top-3 left-3 rounded-full bg-white/90 px-3 py-1 font-utility text-[11px] font-bold uppercase tracking-wide text-brand-red">
             {study.tag}
           </div>
         </div>
@@ -127,7 +127,7 @@ export function WorkCard({
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                 {study.description}
               </p>
-              <p className="mt-4 text-xs font-bold uppercase tracking-widest text-brand-red">
+              <p className="mt-4 font-utility text-xs font-bold uppercase tracking-widest text-brand-red">
                 Go Rural India{study.years ? ` · ${study.years}` : ""}
               </p>
             </MorphingDialogDescription>

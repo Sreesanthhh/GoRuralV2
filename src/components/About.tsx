@@ -12,7 +12,7 @@ export function About() {
         className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center"
       >
         <div>
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-red">
+          <span className="font-utility text-xs font-bold uppercase tracking-widest text-brand-red">
             Who We Are
           </span>
           <h2 className="mt-3 font-display font-extrabold text-ink text-3xl sm:text-4xl md:text-[2.75rem] leading-tight">

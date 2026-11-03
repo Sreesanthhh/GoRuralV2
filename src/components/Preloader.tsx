@@ -75,7 +75,7 @@ export function Preloader() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.45 }}
-              className="mt-5 font-display text-xs font-extrabold uppercase tracking-[0.3em] text-ink-soft"
+              className="mt-5 font-utility text-xs font-extrabold uppercase tracking-[0.3em] text-ink-soft"
             >
               Taking Brands to Hinterlands
             </motion.p>
