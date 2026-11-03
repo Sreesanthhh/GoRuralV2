@@ -26,11 +26,21 @@ export type WorkCategory = {
   points?: string[];
   /** Big red highlight stat line. */
   highlight?: string;
+  /** Wide hero photograph for the category's own page. */
+  image?: string;
+  /** What the hero photograph actually shows, for alt text. */
+  imageAlt?: string;
+  /** Campaign the hero photograph came from, shown as a caption. */
+  imageCredit?: string;
 };
 
 export const workCategories: WorkCategory[] = [
   {
     slug: "mobile-van-campaign",
+    image: "/images/work/mobile-van-campaign.jpg",
+    imageAlt:
+      "A branded LED van screening crop content to a village crowd after dark",
+    imageCredit: "Crystal Crop LED van campaign, Rajanna Sircilla, Telangana",
     title: "Mobile Van Campaign",
     icon: "Truck",
     short: "Branded LED & box vans that take your message door to door.",
@@ -48,6 +58,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "haat-mela-mandi-activations",
+    image: "/images/work/haat-mela-mandi.jpg",
+    imageAlt:
+      "A branded canopy and product stall drawing a crowd on market day",
+    imageCredit: "TVS XL100 mandi activation, Tamil Nadu",
     title: "Haat, Mela & Mandi Activations",
     icon: "Storefront",
     short: "Rythu Bazaars, weekly haats, and mandi-day brand activations.",
@@ -60,6 +74,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "ooh-branding",
+    image: "/images/work/ooh-branding.jpg",
+    imageAlt:
+      "A full-height painted brand campaign on a building wall above a Hyderabad street",
+    imageCredit: "Wall and building branding, Hyderabad",
     title: "OOH Branding",
     icon: "Buildings",
     short: "Building wraps, hoardings, wall paintings, arches, and more.",
@@ -79,6 +97,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "rural-influencer-campaign",
+    image: "/images/work/rural-influencer-campaign.jpg",
+    imageAlt:
+      "A regional creator in festival dress on a marigold-dressed set",
+    imageCredit: "TVS Dasara influencer shoot, September 2025",
     title: "Rural Influencer Campaign",
     icon: "Megaphone",
     short: "Regional creators and local voices your audience actually trusts.",
@@ -87,6 +109,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "festival-activation",
+    image: "/images/work/festival-activation.jpg",
+    imageAlt:
+      "A branded welcome arch spanning a crowded festival street",
+    imageCredit: "Fortune branding at Khairatabad Ganesh, Hyderabad",
     title: "Festival Activation",
     icon: "Confetti",
     short: "Brand presence at jataras, festivals, and mega congregations.",
@@ -100,6 +126,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "fabrication-digital-signage",
+    image: "/images/work/fabrication-digital-signage.jpg",
+    imageAlt:
+      "A lit LED arch fabricated over a store entrance at night",
+    imageCredit: "KLM Fashion Dasara arches, Hyderabad",
     title: "Fabrication & Digital Signage",
     icon: "Monitor",
     short: "In-house production of signage, kiosks, and branded structures.",
@@ -133,6 +163,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "events-dealer-meets",
+    image: "/images/work/events-dealer-meets.jpg",
+    imageAlt:
+      "A dealer being felicitated on stage in front of a branded screen",
+    imageCredit: "TVS PD Plan roll-out meet, Taj Vivanta, Hyderabad",
     title: "Events & Dealer Meets",
     icon: "Microphone",
     short: "Dealer meets, award nights, and corporate events end-to-end.",
@@ -141,6 +175,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "rural-sports",
+    image: "/images/work/rural-sports.jpg",
+    imageAlt:
+      "An LED van announcing a community run on a town high street",
+    imageCredit: "Khammam She Teams Run, March 2022",
     title: "Rural Sports & Runs",
     icon: "PersonSimpleRun",
     short: "Community runs and sporting events that rally whole towns.",
@@ -149,6 +187,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "experiential-marketing",
+    image: "/images/work/experiential-marketing.jpg",
+    imageAlt:
+      "Branded canopies and display panels set up inside a residential community at night",
+    imageCredit: "Residential community activation, Hyderabad",
     title: "Experiential Marketing",
     icon: "Sparkle",
     short: "RWA activations, community carnivals, and live brand experiences.",
@@ -157,6 +199,10 @@ export const workCategories: WorkCategory[] = [
   },
   {
     slug: "csr",
+    image: "/images/work/csr.jpg",
+    imageAlt:
+      "Officials flagging off a branded environment-day campaign vehicle",
+    imageCredit: "SBI World Environment Day campaign, Hyderabad",
     title: "CSR Campaigns",
     icon: "HandHeart",
     short: "Purpose-led campaigns executed with community depth.",

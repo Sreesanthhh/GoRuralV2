@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo, Fraunces, Manrope } from "next/font/google";
+import { Archivo, Manrope, Yeseva_One } from "next/font/google";
 import { Preloader } from "@/components/Preloader";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { workCategories } from "@/data/content";
@@ -13,13 +13,13 @@ import "./globals.css";
 
 // Three faces, three jobs.
 //
-// Fraunces is the voice: a warm old-style serif with calligraphic stroke
-// contrast whose roundness sits with the logo rather than against it. The opsz
-// axis lets it get more dramatic at hero sizes and steadier at card sizes.
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+// Yeseva One is the voice: a display serif with calligraphic flourishes in its
+// terminals. It ships a single weight (400), so see the font-synthesis rule in
+// globals.css that stops the browser faking a bold for font-extrabold.
+const yeseva = Yeseva_One({
+  variable: "--font-yeseva",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT"],
+  weight: "400",
   display: "swap",
 });
 
@@ -85,7 +85,7 @@ export default function RootLayout({
   return (
     <html
       lang="en-IN"
-      className={`${fraunces.variable} ${archivo.variable} ${manrope.variable} h-full antialiased`}
+      className={`${yeseva.variable} ${archivo.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink font-body">
         <a

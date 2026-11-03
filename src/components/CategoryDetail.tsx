@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowLeft, Camera, Check } from "@phosphor-icons/react/dist/ssr";
 import { caseStudies, type WorkCategory } from "@/data/content";
 import { AnimatedSection, StaggerGroup, StaggerItem } from "./AnimatedSection";
@@ -70,6 +72,31 @@ export function CategoryDetail({ category }: { category: WorkCategory }) {
               </p>
             )}
           </AnimatedSection>
+
+          {category.image && (
+            <motion.figure
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-12 md:mt-14"
+            >
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-3xl bg-line sm:aspect-[2/1] lg:aspect-[21/9]">
+                <Image
+                  src={category.image}
+                  alt={category.imageAlt ?? category.title}
+                  fill
+                  priority
+                  sizes="(max-width: 1280px) 100vw, 1280px"
+                  className="object-cover"
+                />
+              </div>
+              {category.imageCredit && (
+                <figcaption className="mt-3 font-utility text-[11px] font-bold uppercase tracking-widest text-ink-soft">
+                  {category.imageCredit}
+                </figcaption>
+              )}
+            </motion.figure>
+          )}
         </div>
       </section>
 
