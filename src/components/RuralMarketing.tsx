@@ -1,51 +1,36 @@
 "use client";
 
 import Link from "next/link";
-import {
-  Truck,
-  Storefront,
-  Buildings,
-  Megaphone,
-  Confetti,
-  Monitor,
-  FilmSlate,
-  GraduationCap,
-  Microphone,
-  PersonSimpleRun,
-  Sparkle,
-  HandHeart,
-  CirclesThreePlus,
-  ArrowRight,
-  ArrowUpRight,
-} from "@phosphor-icons/react/dist/ssr";
-import type { Icon } from "@phosphor-icons/react";
+import { ArrowRight, ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { workCategories, caseStudies, clients, stats } from "@/data/content";
 import { SlideInSection } from "./AnimatedSection";
-import { GlowCard } from "./ui/spotlight-card";
 
-/** How many archived campaigns sit behind each service. Shown on the cards
-    instead of a decorative 01–13 counter: these thirteen services are a
-    taxonomy, not a sequence, so the slot should carry something true. */
+/** How many archived campaigns sit behind each service. */
 const campaignCounts = caseStudies.reduce<Record<string, number>>((acc, c) => {
   acc[c.category] = (acc[c.category] ?? 0) + 1;
   return acc;
 }, {});
 
-const iconMap: Record<string, Icon> = {
-  Truck,
-  Storefront,
-  Buildings,
-  Megaphone,
-  Confetti,
-  Monitor,
-  FilmSlate,
-  GraduationCap,
-  Microphone,
-  PersonSimpleRun,
-  Sparkle,
-  HandHeart,
-  CirclesThreePlus,
-};
+/**
+ * Thirteen services, but the work behind them runs from 29 campaigns down to
+ * none. An even grid of thirteen tiles flattens that, so the index is ordered
+ * by volume and the count is set at a size that follows its own value. The
+ * numeral is the only ornament in the row, and it is information rather than
+ * decoration: the section visibly tapers as the archive thins out.
+ *
+ * The title stays one size throughout, so a service is never harder to read
+ * for being a smaller line of business.
+ */
+function numeralSize(n: number) {
+  if (n >= 20) return "text-5xl sm:text-7xl lg:text-8xl";
+  if (n >= 10) return "text-4xl sm:text-6xl lg:text-7xl";
+  if (n >= 5) return "text-3xl sm:text-5xl lg:text-6xl";
+  return "text-3xl sm:text-4xl lg:text-5xl";
+}
+
+const servicesByWeight = [...workCategories].sort(
+  (a, b) => (campaignCounts[b.slug] ?? 0) - (campaignCounts[a.slug] ?? 0)
+);
 
 export function RuralMarketing() {
   return (
@@ -59,100 +44,98 @@ export function RuralMarketing() {
             Rural Marketing
           </h2>
           <p className="mt-4 text-ink-soft text-base sm:text-lg">
-            Thirteen ways we take brands into the heartland. Pick any one to
-            see the past campaigns behind it.
+            Thirteen services, ordered by how much of the work they actually
+            account for. Each number is the campaigns in our archive behind
+            that service. Open any row to read them.
           </p>
         </div>
 
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {workCategories.map((cat, i) => {
-            const IconComp = iconMap[cat.icon];
-            const accent = i % 2 === 0 ? "red" : "green";
+        <ul className="mt-12 border-b border-line">
+          {servicesByWeight.map((cat) => {
+            const n = campaignCounts[cat.slug] ?? 0;
             return (
-              <Link
-                key={cat.slug}
-                href={`/work/${cat.slug}`}
-                className="block h-full rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
-              >
-                <GlowCard
-                  glowColor={accent}
-                  customSize
-                  className="group h-full w-full border-2 border-brand-red/15 bg-white p-6 shadow-[0_1px_2px_rgba(28,27,24,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-red hover:shadow-2xl hover:shadow-brand-red/10"
+              <li key={cat.slug} className="border-t border-line">
+                <Link
+                  href={`/work/${cat.slug}`}
+                  className="group relative isolate flex items-baseline gap-5 overflow-hidden px-2 py-6 sm:gap-8 sm:px-4 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-red"
                 >
-                  <div className="flex h-full flex-col">
-                    <div className="flex items-start justify-between">
-                      <div
-                        className={`inline-flex items-center justify-center h-12 w-12 rounded-xl shadow-sm ring-1 transition-colors duration-300 ${
-                          accent === "red"
-                            ? "bg-gradient-to-br from-brand-red/15 to-brand-red/5 text-brand-red ring-brand-red/15 group-hover:bg-brand-red group-hover:text-white group-hover:ring-brand-red"
-                            : "bg-gradient-to-br from-brand-green/15 to-brand-green/5 text-brand-green ring-brand-green/15 group-hover:bg-brand-green group-hover:text-white group-hover:ring-brand-green"
-                        }`}
-                      >
-                        {IconComp && <IconComp size={24} weight="bold" />}
-                      </div>
-                      {campaignCounts[cat.slug] > 0 && (
-                        <span className="text-right font-utility text-[11px] font-extrabold uppercase leading-tight tracking-widest text-ink/45">
-                          <span className="block text-base text-ink/75">
-                            {campaignCounts[cat.slug]}
-                          </span>
-                          campaigns
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="mt-5 font-display font-bold text-ink text-lg leading-snug">
+                  {/* The paint. Sweeps in from the left edge on hover and on
+                      keyboard focus, so the row fills the way a wall does.
+                      Sits behind the content via -z-10 on an isolated stack. */}
+                  <span
+                    aria-hidden
+                    className="absolute inset-0 -z-10 origin-left scale-x-0 bg-brand-red transition-transform duration-[450ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 motion-reduce:transition-none"
+                  />
+
+                  <span
+                    className={`w-16 shrink-0 text-right font-display leading-[0.8] tabular-nums text-ink/85 transition-colors duration-300 group-hover:text-cream group-focus-visible:text-cream sm:w-24 lg:w-32 ${numeralSize(
+                      n
+                    )}`}
+                  >
+                    {n > 0 ? (
+                      n
+                    ) : (
+                      <span className="font-utility text-[10px] font-bold uppercase tracking-widest text-ink-soft group-hover:text-cream/80 sm:text-[11px]">
+                        New
+                      </span>
+                    )}
+                  </span>
+
+                  <span className="min-w-0 flex-1">
+                    <span className="block font-display text-xl font-bold leading-snug text-ink transition-colors duration-300 group-hover:text-cream group-focus-visible:text-cream sm:text-2xl">
                       {cat.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-ink-soft leading-relaxed">
-                      {cat.short}
-                    </p>
-                    <span className="mt-auto inline-flex items-center gap-1 pt-4 font-utility text-xs font-bold uppercase tracking-widest text-brand-red opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      View Work
-                      <ArrowUpRight size={13} weight="bold" />
                     </span>
-                  </div>
-                </GlowCard>
-              </Link>
+                    <span className="mt-1.5 block max-w-xl text-sm leading-relaxed text-ink-soft transition-colors duration-300 group-hover:text-cream/80 group-focus-visible:text-cream/80 sm:text-base">
+                      {cat.short}
+                    </span>
+                  </span>
+
+                  <ArrowUpRight
+                    size={22}
+                    weight="bold"
+                    aria-hidden
+                    className="mt-1 shrink-0 self-center text-ink/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-cream group-focus-visible:text-cream motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+                  />
+                </Link>
+              </li>
             );
           })}
+        </ul>
 
-          {/* Thirteen cards leave an orphan slot in the 2- and 4-column grids;
-              this tile fills it and turns dead space into a second CTA. */}
-          <Link
-            href="/#contact"
-            className="group flex h-full flex-col justify-between rounded-2xl bg-ink p-6 text-white transition-colors duration-300 hover:bg-brand-red focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red lg:col-span-3"
-          >
-            <div>
-              <p className="font-utility text-xs font-bold uppercase tracking-widest text-brand-amber group-hover:text-white">
-                Not sure which one?
-              </p>
-              <p className="mt-3 max-w-md font-display text-xl font-bold leading-snug sm:text-2xl">
-                Tell us the brand, the budget and the belt you want to cover.
-                We will map the mix.
-              </p>
-            </div>
-            <span className="mt-6 inline-flex items-center gap-2 font-utility text-sm font-bold uppercase tracking-widest">
+        <div className="mt-12 flex flex-col gap-6 bg-ink p-8 text-white sm:flex-row sm:items-end sm:justify-between md:p-10">
+          <div>
+            <p className="font-utility text-xs font-bold uppercase tracking-widest text-brand-amber">
+              Not sure which one?
+            </p>
+            <p className="mt-3 max-w-lg font-display text-xl font-bold leading-snug sm:text-2xl">
+              Tell us the brand, the budget and the belt you want to cover. We
+              will map the mix.
+            </p>
+          </div>
+          <div className="flex shrink-0 flex-wrap items-center gap-x-7 gap-y-3">
+            <Link
+              href="/#contact"
+              className="group inline-flex items-center gap-2 font-utility text-sm font-bold uppercase tracking-widest text-white transition-colors duration-200 hover:text-brand-amber focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-amber"
+            >
               Talk to us
               <ArrowRight
                 size={16}
                 weight="bold"
-                className="transition-transform duration-200 group-hover:translate-x-1"
+                className="transition-transform duration-200 group-hover:translate-x-1 motion-reduce:group-hover:translate-x-0"
               />
-            </span>
-          </Link>
-        </div>
-
-        <div className="mt-10 text-center">
-          <Link
-            href="/work"
-            className="btn-shine group inline-flex items-center gap-2 rounded-full border border-line bg-white px-7 py-3.5 text-sm sm:text-base font-semibold text-ink hover:border-brand-red hover:text-brand-red transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
-          >
-            View All Work
-            <ArrowRight
-              size={18}
-              weight="bold"
-              className="transition-transform duration-200 group-hover:translate-x-1"
-            />
-          </Link>
+            </Link>
+            <Link
+              href="/work"
+              className="group inline-flex items-center gap-2 font-utility text-sm font-bold uppercase tracking-widest text-white/60 transition-colors duration-200 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-amber"
+            >
+              All 117 campaigns
+              <ArrowRight
+                size={16}
+                weight="bold"
+                className="transition-transform duration-200 group-hover:translate-x-1 motion-reduce:group-hover:translate-x-0"
+              />
+            </Link>
+          </div>
         </div>
 
         <div className="mt-16">
