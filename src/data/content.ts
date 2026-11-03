@@ -243,7 +243,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "A continuous multi-year LED and demo van programme for TVS Motor spanning Andhra Pradesh, Telangana, Karnataka, Tamil Nadu, Gujarat, Madhya Pradesh, Maharashtra, Uttar Pradesh, Bihar, Jharkhand, Odisha, Chhattisgarh and West Bengal. The fleet covers the Raider, Radeon, Apache, Star City, Sport, Jupiter and NTorq lines with LED screens, L-shape displays and demo units.",
-    placeholder: true,
+    image: "/images/work/card-0.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -252,7 +252,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "Multi-van retail campaigns across Telangana, Hyderabad and Andhra Pradesh, scaling from 5 vans over 20 days to a 10-van, 30-day deployment.",
-    placeholder: true,
+    image: "/images/work/card-1.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -261,7 +261,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "Sustained van campaigns for Syngenta's crop-protection portfolio (Incipio, Sarvam, Udaan, Simodis Cotton and Vestoria Pro) using branded Tata Ace and LED vehicles across Andhra Pradesh and Telangana.",
-    placeholder: true,
+    image: "/images/work/card-2.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -279,7 +279,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "Mobile promotion vans, L-shape display vehicles and pond-vehicle activations for Vodafone across Andhra Pradesh, Telangana, Karnataka and Hyderabad.",
-    placeholder: true,
+    image: "/images/work/card-4.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -288,7 +288,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "Multi-van crop-science campaigns across Karimnagar, Jangaon and Peddapalli, including the NewGen product line, scaling to a 4-van deployment.",
-    placeholder: true,
+    image: "/images/work/card-5.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -297,7 +297,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "LED and standard mobile van activations promoting Kaveri's hybrid crop varieties across Telangana and Andhra Pradesh, tracked with daily route reporting.",
-    placeholder: true,
+    image: "/images/work/card-6.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -315,7 +315,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Van campaigns for Crystal Crop's agri-input range, including a 60-day continuous LED van deployment.",
-    placeholder: true,
+    image: "/images/work/card-8.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -324,7 +324,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "Three-van campaigns taking Shriram's bio-seed range into farming communities across the Telugu states.",
-    placeholder: true,
+    image: "/images/work/card-9.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -333,7 +333,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "Tata Ace and LED van activations introducing Ankur's seed varieties to rural retail networks.",
-    placeholder: true,
+    image: "/images/work/card-10.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -351,7 +351,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Tata Ace van activations around Madanapalle, taking Dhanuka's crop-protection products to farming clusters.",
-    placeholder: true,
+    image: "/images/work/card-12.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -360,7 +360,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "LED van campaign introducing Max Seeds' hybrid range across rural markets.",
-    placeholder: true,
+    image: "/images/work/card-13.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -369,7 +369,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Box van campaign carrying the Genomix agri portfolio into rural retail territories.",
-    placeholder: true,
+    image: "/images/work/card-14.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -378,7 +378,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Multi-state van campaign across Andhra Pradesh, Karnataka and Telangana promoting Kubota's farm machinery to agricultural buyers.",
-    placeholder: true,
+    image: "/images/work/card-15.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -387,7 +387,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Van activity extending Tata BlueScope's reach along construction supply routes and dealer territories.",
-    placeholder: true,
+    image: "/images/work/card-16.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -396,7 +396,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Van activity carrying Tata Rallis' agri-input range into farming communities.",
-    placeholder: true,
+    image: "/images/work/card-17.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -405,7 +405,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Multi-month Tata Ace van campaign across Telangana, targeting plumbing and construction trade networks.",
-    placeholder: true,
+    image: "/images/work/card-18.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -423,7 +423,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Van-based brand activation across Maharashtra for Skipper Metzer's irrigation product line.",
-    placeholder: true,
+    image: "/images/work/card-20.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -432,7 +432,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Mobile promotion vans carrying LIC's life-insurance messaging into residential and rural markets.",
-    placeholder: true,
+    image: "/images/work/card-21.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -441,7 +441,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "Continuation van campaign for Sensodyne, plus two-sided LED branding vehicles across Maharashtra.",
-    placeholder: true,
+    image: "/images/work/card-22.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -450,7 +450,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Van campaign delivering Royal Stag's brand presence across target rural and semi-urban markets.",
-    placeholder: true,
+    image: "/images/work/card-23.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -477,7 +477,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Three-van LED campaign spanning Andhra Pradesh, Telangana and Odisha.",
-    placeholder: true,
+    image: "/images/work/card-26.jpg",
     category: "mobile-van-campaign",
   },
   {
@@ -508,7 +508,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "Our largest running programme: LED demo vans working the weekly mandi circuit across twelve states (Uttar Pradesh, Rajasthan, Haryana, Bihar, Odisha, Jharkhand, West Bengal, Chhattisgarh, Maharashtra, Madhya Pradesh, Tamil Nadu and AP/Telangana) with route plans built around each market's trading day and repeatedly extended on client request.",
-    placeholder: true,
+    image: "/images/work/card-29.jpg",
     category: "haat-mela-mandi-activations",
   },
   {
@@ -517,7 +517,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "An interactive mileage-challenge format run from mandi vans across Jharkhand and Chhattisgarh, pairing product demonstration with hands-on test rides at market gatherings.",
-    placeholder: true,
+    image: "/images/work/card-30.jpg",
     category: "haat-mela-mandi-activations",
   },
   {
@@ -526,7 +526,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Finance-led mela activations across Hyderabad and Secunderabad, converting footfall into qualified two-wheeler loan enquiries.",
-    placeholder: true,
+    image: "/images/work/card-31.jpg",
     category: "haat-mela-mandi-activations",
   },
   {
@@ -535,7 +535,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Retailer arch branding across PMKSK outlets in Andhra Pradesh and Telangana, marking Chambal's presence at the point of farmer purchase.",
-    placeholder: true,
+    image: "/images/work/card-32.jpg",
     category: "haat-mela-mandi-activations",
   },
 
@@ -557,7 +557,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "A rolling six-month building-wrap programme at Charminar, one of Hyderabad's highest-footfall landmarks, with periodic flex changes to keep creative fresh.",
-    placeholder: true,
+    image: "/images/work/card-34.jpg",
     category: "ooh-branding",
   },
   {
@@ -566,7 +566,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "Sustained out-of-home presence across Telangana and Andhra Pradesh: Charminar building wraps, 60+ hoardings, 50 new building sites, wall wraps, Dasara hoardings and Punjab digital walls.",
-    placeholder: true,
+    image: "/images/work/card-35.jpg",
     category: "ooh-branding",
   },
   {
@@ -575,7 +575,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2025",
     description:
       "2D and 3D arch installations across the AP region plus 100 festival pandal arches in Hyderabad, turning public gathering points into brand landmarks.",
-    placeholder: true,
+    image: "/images/work/card-36.jpg",
     category: "ooh-branding",
   },
   {
@@ -593,7 +593,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "LED arch installations marking Zomato's presence at high-traffic public locations.",
-    placeholder: true,
+    image: "/images/work/card-38.jpg",
     category: "ooh-branding",
   },
   {
@@ -602,7 +602,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2025",
     description:
       "LED arch fabrication and installation across KLM Shopping Mall and Dasara festival sites, delivered end to end from design to on-site build.",
-    placeholder: true,
+    image: "/images/work/card-39.jpg",
     category: "ooh-branding",
   },
   {
@@ -611,7 +611,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Store-front and in-shop branding across five Hyderabad stores plus Narasaraopet and Tadepalligudem outlets: Kukatpally, Chandanagar, Somajiguda, AS Rao Nagar and Nizamabad.",
-    placeholder: true,
+    image: "/images/work/card-40.jpg",
     category: "ooh-branding",
   },
   {
@@ -620,7 +620,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Vehicle branding across 500+ auto-rickshaws, turning everyday transit into a moving media network along construction supply routes.",
-    placeholder: true,
+    image: "/images/work/card-41.jpg",
     category: "ooh-branding",
   },
   {
@@ -629,7 +629,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "500-unit auto-rickshaw branding campaign putting the NTorq in front of exactly the urban commuter audience it targets.",
-    placeholder: true,
+    image: "/images/work/card-42.jpg",
     category: "ooh-branding",
   },
   {
@@ -638,7 +638,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Multi-month building-wrap campaign for Gemini TV across prime Hyderabad sites.",
-    placeholder: true,
+    image: "/images/work/card-43.jpg",
     category: "ooh-branding",
   },
   {
@@ -683,7 +683,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Restaurant branding across partner outlets including Bawarchi, plus a rider T-shirt branding campaign turning the delivery fleet into moving media.",
-    placeholder: true,
+    image: "/images/work/card-48.jpg",
     category: "ooh-branding",
   },
   {
@@ -701,7 +701,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Single-side LED arch at Khairatabad Ganesh, one of Hyderabad's highest-footfall festival sites.",
-    placeholder: true,
+    image: "/images/work/card-50.jpg",
     category: "ooh-branding",
   },
   {
@@ -710,7 +710,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Custom LED arch innovation for the streaming platform aha at the Khairatabad festival site.",
-    placeholder: true,
+    image: "/images/work/card-51.jpg",
     category: "ooh-branding",
   },
   {
@@ -750,7 +750,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Regional influencers embedded into the mandi van circuit across Madhya Pradesh and Maharashtra, combining on-ground demonstration with creator-led social reach.",
-    placeholder: true,
+    image: "/images/work/card-55.jpg",
     category: "rural-influencer-campaign",
   },
   {
@@ -781,7 +781,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "The full sponsor roster we executed at Medaram: UltraTech Cement LED arches, Wipro, Swastik Masala, Tata BlueScope Steel, Freedom, Zee Telugu, MTR and Lalith Jewellery, each with bespoke stalls, arches and branded zones across the festival footprint.",
-    placeholder: true,
+    image: "/images/work/card-58.jpg",
     category: "festival-activation",
   },
   {
@@ -790,7 +790,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "A seasonal community festival franchise run across residential communities, with sponsor activations for LG, GRT Jewellers, Freedom, Swastik Mirchi, Skoda, Muthoot Group, TVS Motors, ACT Fibre, Porter, SV Saree House, Unacademy, Urban Rise, Casagrand, Bosch and Zee Telugu.",
-    placeholder: true,
+    image: "/images/work/card-59.jpg",
     category: "festival-activation",
   },
   {
@@ -799,7 +799,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "A large-scale eco-friendly Ganesh idol supply and distribution programme: over 10,000 idols for UltraTech/Aditya Birla, Titan, MTR, Hindware, JSW Energy, Ramky, Kalamandir, Landvision, Axis Energy, Green Mark, Tridasa, CMR and Heritage, combining brand visibility with an environmental message.",
-    placeholder: true,
+    image: "/images/work/card-60.jpg",
     category: "festival-activation",
   },
   {
@@ -808,7 +808,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "Branding elements at Khairatabad Ganesh, one of India's most-visited festival sites, executed for Shriram Finance, MTR, Polycab, Big Basket and Heritage.",
-    placeholder: true,
+    image: "/images/work/card-61.jpg",
     category: "festival-activation",
   },
   {
@@ -817,7 +817,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Festival event execution at Vijayawada during Dasara for Adani, MTR and KEI: stage, branding and on-ground engagement across the celebration.",
-    placeholder: true,
+    image: "/images/work/card-62.jpg",
     category: "festival-activation",
   },
   {
@@ -826,7 +826,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Brand activation at Bonalu in Hyderabad, embedding Fortune into one of Telangana's most participatory local festivals.",
-    placeholder: true,
+    image: "/images/work/card-63.jpg",
     category: "festival-activation",
   },
   {
@@ -835,7 +835,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Pilgrimage-site activation at Simhachalam, reaching devotee footfall with JK Cement's brand messaging.",
-    placeholder: true,
+    image: "/images/work/card-64.jpg",
     category: "festival-activation",
   },
   {
@@ -844,7 +844,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Sankranti festive decor and in-store theming at CMR Patny for the peak retail season.",
-    placeholder: true,
+    image: "/images/work/card-65.jpg",
     category: "festival-activation",
   },
 
@@ -866,7 +866,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Exhibition stall fabrication for Shriram Seeds at ICRISAT, delivered on the same build cycle.",
-    placeholder: true,
+    image: "/images/work/card-67.jpg",
     category: "fabrication-digital-signage",
   },
   {
@@ -875,7 +875,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Conference stall fabrication and installation at Marigold Hotel for Shriram Bio Seeds.",
-    placeholder: true,
+    image: "/images/work/card-68.jpg",
     category: "fabrication-digital-signage",
   },
   {
@@ -884,7 +884,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025–2026",
     description:
       "Large-format LED display supply and operation: 12x8 and 14x8 rigs running 18–20 day cycles, including a 16-day Udaan deployment across Tamil Nadu.",
-    placeholder: true,
+    image: "/images/work/card-69.jpg",
     category: "fabrication-digital-signage",
   },
   {
@@ -902,7 +902,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Stall design and branding for GRT at T-Hub, Hyderabad's flagship innovation campus.",
-    placeholder: true,
+    image: "/images/work/card-71.jpg",
     category: "fabrication-digital-signage",
   },
   {
@@ -929,7 +929,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "Custom vehicle fabrication and branding builds for Freedom's promotional fleet.",
-    placeholder: true,
+    image: "/images/work/card-74.jpg",
     category: "fabrication-digital-signage",
   },
 
@@ -959,7 +959,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "End-to-end execution of TVS's PD Awards night at Taj Vivanta: staging, AV, branding and hospitality for the dealer partner network.",
-    placeholder: true,
+    image: "/images/work/card-76.jpg",
     category: "events-dealer-meets",
   },
   {
@@ -968,7 +968,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Full event production at Pragathi Resorts for TVS's partner and channel programme.",
-    placeholder: true,
+    image: "/images/work/card-77.jpg",
     category: "events-dealer-meets",
   },
   {
@@ -977,7 +977,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Product launch event at Chirala for the TVS three-wheeler range, targeting commercial-vehicle buyers.",
-    placeholder: true,
+    image: "/images/work/card-78.jpg",
     category: "events-dealer-meets",
   },
   {
@@ -986,7 +986,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Back-to-back dealer conferences at Vijayawada and Visakhapatnam, covering venue, staging, branding and delegate management.",
-    placeholder: true,
+    image: "/images/work/card-79.jpg",
     category: "events-dealer-meets",
   },
   {
@@ -1034,7 +1034,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Cricket-themed retail activations with green mat and stumps set-ups at Madhapur and Secunderabad stores, turning store forecourts into play zones.",
-    placeholder: true,
+    image: "/images/work/card-84.jpg",
     category: "rural-sports",
   },
 
@@ -1083,7 +1083,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024–2026",
     description:
       "A continuous residential-community programme: Jupiter and Raider RWA activations, gazebo set-ups across Karnataka, and test-ride drives in Hyderabad, Vijayawada, Visakhapatnam, Nizamabad, Khammam, Karimnagar, Tumkur, Warangal, Tamil Nadu, Maharashtra and Odisha.",
-    placeholder: true,
+    image: "/images/work/card-89.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1092,7 +1092,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Promoter-led residential community activations for CMR across 30+ gated communities.",
-    placeholder: true,
+    image: "/images/work/card-90.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1101,7 +1101,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "RWA activations paired with a seven-day Tata Ace van campaign, reaching affluent residential catchments.",
-    placeholder: true,
+    image: "/images/work/card-91.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1110,7 +1110,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Residential community activation putting Mahindra vehicles in front of family buyers at home.",
-    placeholder: true,
+    image: "/images/work/card-92.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1137,7 +1137,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "RWA activation for Škoda run alongside the Mango Fest community programme.",
-    placeholder: true,
+    image: "/images/work/card-95.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1146,7 +1146,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "Residential community activations bringing GRT's collections directly to household audiences.",
-    placeholder: true,
+    image: "/images/work/card-96.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1155,7 +1155,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "RWA sampling and engagement programme for MTR's food range.",
-    placeholder: true,
+    image: "/images/work/card-97.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1164,7 +1164,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "A seasonal community activation built around home pickle-making, a culturally rooted format that drew families into the brand experience.",
-    placeholder: true,
+    image: "/images/work/card-98.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1173,7 +1173,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Apartment-complex sampling and engagement programme for Coca-Cola across Hyderabad residential clusters.",
-    placeholder: true,
+    image: "/images/work/card-99.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1182,7 +1182,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "RWA activation introducing Unacademy's programmes to parents inside residential communities.",
-    placeholder: true,
+    image: "/images/work/card-100.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1191,7 +1191,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Residential community sampling and engagement for Kedia's rice portfolio.",
-    placeholder: true,
+    image: "/images/work/card-101.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1200,7 +1200,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "RWA activation driving broadband sign-ups directly inside target residential communities.",
-    placeholder: true,
+    image: "/images/work/card-102.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1209,7 +1209,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Community activation introducing Porter's on-demand logistics service to household users.",
-    placeholder: true,
+    image: "/images/work/card-103.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1227,7 +1227,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "RWA activation programme for Sampangi Infra's residential projects.",
-    placeholder: true,
+    image: "/images/work/card-105.jpg",
     category: "experiential-marketing",
   },
   {
@@ -1236,7 +1236,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2025",
     description:
       "Residential community activation programme for TDH.",
-    placeholder: true,
+    image: "/images/work/card-106.jpg",
     category: "experiential-marketing",
   },
 
@@ -1249,7 +1249,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Eco-friendly Ganesh idol distribution across Kapra and surrounding wards, pairing environmental messaging with community participation.",
-    placeholder: true,
+    image: "/images/work/card-107.jpg",
     category: "csr",
   },
   {
@@ -1258,7 +1258,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "A green CSR campaign with BIG FM and SBI distributing saplings through community touchpoints.",
-    placeholder: true,
+    image: "/images/work/card-108.jpg",
     category: "csr",
   },
   {
@@ -1280,7 +1280,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Large-scale multi-constituency campaign support across Andhra Pradesh: LED and L-shape van fleets, 3D vehicles and on-ground field teams deployed for candidates and party units across Anantapur, Ongole, Guntur, Amalapuram, Gudivada, Tuni, Prakasam and more.",
-    placeholder: true,
+    image: "/images/work/card-110.jpg",
     category: "others",
   },
   {
@@ -1289,7 +1289,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2023–2024",
     description:
       "Constituency-level campaign execution across Telangana including BJP MP election work, Zaheerabad and Nizamabad campaigns, and hoarding programmes.",
-    placeholder: true,
+    image: "/images/work/card-111.jpg",
     category: "others",
   },
   {
@@ -1298,7 +1298,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2024",
     description:
       "Campaign support for candidates in the Maharashtra assembly elections, extending our election capability beyond the Telugu states.",
-    placeholder: true,
+    image: "/images/work/card-112.jpg",
     category: "others",
   },
   {
@@ -1307,7 +1307,7 @@ export const caseStudies: CaseStudy[] = [
     years: "2026",
     description:
       "On-ground campaign support for municipal election outreach, including day-wise field activations.",
-    placeholder: true,
+    image: "/images/work/card-113.jpg",
     category: "others",
   },
   {
