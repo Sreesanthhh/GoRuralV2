@@ -37,15 +37,22 @@ export function SlideInSection({
   delay?: number;
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: direction === "left" ? -72 : 72 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
-      className={className}
-    >
-      {children}
-    </motion.div>
+    // The child starts translated 72px sideways, which on a right-slide pushes
+    // the document wider than the viewport and shows a horizontal scrollbar
+    // until the section animates into place. `clip` contains it without
+    // creating a scroll container, so sticky positioning and Lenis are
+    // untouched.
+    <div className="overflow-x-clip">
+      <motion.div
+        initial={{ opacity: 0, x: direction === "left" ? -72 : 72 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
+        className={className}
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 }
 

@@ -87,7 +87,7 @@ export function CategoryDetail({ category }: { category: WorkCategory }) {
               </AnimatedSection>
               <StaggerGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {works.map((c, i) => (
-                  <StaggerItem key={c.title} className="h-full">
+                  <StaggerItem key={c.title} className="h-full min-w-0">
                     <WorkCard study={c} accent={i % 2 === 0 ? "red" : "green"} />
                   </StaggerItem>
                 ))}

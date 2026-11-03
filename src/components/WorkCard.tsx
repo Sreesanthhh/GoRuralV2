@@ -60,7 +60,7 @@ export function WorkCard({
     >
       <MorphingDialogTrigger
         style={{ borderRadius: "16px" }}
-        className="group flex h-full w-full flex-col overflow-hidden border border-line bg-white shadow-[0_1px_2px_rgba(28,27,24,0.04)] transition-shadow duration-300 hover:shadow-xl hover:shadow-ink/10"
+        className="group flex h-full w-full min-w-0 flex-col overflow-hidden border border-line bg-white shadow-[0_1px_2px_rgba(28,27,24,0.04)] transition-shadow duration-300 hover:shadow-xl hover:shadow-ink/10"
       >
         <div className="relative">
           {study.placeholder ? (
